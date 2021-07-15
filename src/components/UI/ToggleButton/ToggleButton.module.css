@@ -1,0 +1,61 @@
+.ToggleBtn{
+    position:absolute;
+    width:40px;
+    height:auto;
+    display:flex;
+    flex-flow:column;
+    justify-content:space-around;
+    align-items:flex-end;
+    padding: 10px 0;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+.ToggleBtnActive{
+    position:absolute;
+    width:40px;
+    height:auto;
+    display:flex;
+    flex-flow:column;
+    justify-content:space-around;
+    align-items:flex-end;
+    padding: 10px 0;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+
+.ToggleBtn div {
+    width:90%;
+    height:5px;
+    border-radius:2px;
+    margin:3px 0 3px ;
+    background:rgb(243, 62, 62);
+}
+
+.ToggleBtn div:last-child {
+    width:80%;
+    
+}
+.ToggleBtnActive div {
+    width:90%;
+    height:5px;
+    border-radius:2px;
+    margin:3px 0 3px ;
+    background:rgb(243, 62, 62);
+    transition:0.2s ease-in-out;
+}
+
+
+.ToggleBtnActive div:nth-child(2){
+    background: transparent;
+    
+}
+.ToggleBtnActive div:nth-child(1){
+    background: white;
+    transform:rotate(45deg) translate(13px,7px);
+    
+}
+.ToggleBtnActive div:nth-child(3){
+    background: white;
+    transform:rotate(-45deg) translate(8px,-3px);
+    
+}
