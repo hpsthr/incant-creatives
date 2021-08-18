@@ -75,11 +75,7 @@ const Form = (props) => {
                   scaleX:1,
                   originY:0,
               }:{}}
-              end = {!form ? {
-                y:"58vh",
-                scaleY:0.08,
-                scaleX:0.65
-              }: {}}
+              
               transition ={{
                   type:"spring",
                   
@@ -124,7 +120,7 @@ const Form = (props) => {
                     borderRadius:"15px",
                     backgroundColor:"grey",
                     cursor:"pointer",
-                    border:"none"}}type = "submit" />
+                    border:"none"}}type = "submit" value = "Submit" />
             </motion.form> 
             <motion.div 
             initial = {{
