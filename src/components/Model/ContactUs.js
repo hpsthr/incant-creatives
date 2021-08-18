@@ -63,6 +63,11 @@ const Form = (props) => {
     
     <div className = {classes.FormPosition} >
               <motion.form
+              data-netlify="true"
+              netlify
+              onSubmit="submit"
+              name = "contact"
+              method = "post"
               initial = {{
                   y:"58vh",
                   scaleY:0.08,
@@ -83,10 +88,7 @@ const Form = (props) => {
                   duration:0.6
               }}
               className = {classes.Form}
-              data-netlify="true"
-              onSubmit="submit"
-              name = "contact"
-              method= "POST" >
+               >
                   <input type ="hidden" name = "inquiry" value = "contact"/>
                 <label>
                   Name 
