@@ -10,27 +10,27 @@ const Form = (props) => {
  
 
     const {form} = useContext(Context)
-    const [data , setData] = useState({
-        name:"",
-        email:"",
-        phone:"",
-        message:"",
-    })
+    // const [data , setData] = useState({
+    //     name:"",
+    //     email:"",
+    //     phone:"",
+    //     message:"",
+    // })
 
-    const setdata = async (e) => {
+    // const setdata = async (e) => {
         
-        setData({
-            name:e.target.id === "name" ? e.target.value:data.name,
-            email:e.target.id === "email" ? e.target.value: data.email,
-            phone:e.target.id === "phone" ? e.target.value: data.phone,
-            message:e.target.id === "message" ? e.target.value: data.message,
+    //     setData({
+    //         name:e.target.id === "name" ? e.target.value:data.name,
+    //         email:e.target.id === "email" ? e.target.value: data.email,
+    //         phone:e.target.id === "phone" ? e.target.value: data.phone,
+    //         message:e.target.id === "message" ? e.target.value: data.message,
             
-        })
+    //     })
     
         
 
        
-    }
+    // }
 
     // const submitData = async (e) => {
     //     e.preventDefault()
