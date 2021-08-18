@@ -124,7 +124,7 @@ const Form = (props) => {
                     borderRadius:"15px",
                     backgroundColor:"grey",
                     cursor:"pointer",
-                    border:"none"}}type = "submit" value = "Submit"/>
+                    border:"none"}}type = "submit" />
             </motion.form> 
             <motion.div 
             initial = {{
