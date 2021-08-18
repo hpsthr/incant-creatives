@@ -38,34 +38,34 @@ const Form = (props) => {
     
     
     <div className = {classes.FormPosition} style={{...props.style}} >
-              <motion.form
+              <form
               
               data-netlify = "true"
               onSubmit="submit"
               name = "contact"
               method = "POST"
-              initial = {{
-                  y:"58vh",
-                  scaleY:0.08,
-                  scaleX:0.65
-              }}
+            //   initial = {{
+            //       y:"58vh",
+            //       scaleY:0.08,
+            //       scaleX:0.65
+            //   }}
               
-              animate = {form ? {
-                  y:"3vh",
-                  scaleY:1,
-                  scaleX:1,
-                  originY:0,
-              }:{}}
+            //   animate = {form ? {
+            //       y:"3vh",
+            //       scaleY:1,
+            //       scaleX:1,
+            //       originY:0,
+            //   }:{}}
               
-              transition ={{
-                  type:"spring",
+            //   transition ={{
+            //       type:"spring",
                   
-                  ease:"easeInOut",
-                  duration:0.6
-              }}
+            //       ease:"easeInOut",
+            //       duration:0.6
+            //   }}
               className = {classes.Form}
                >
-                  <input type="hidden" name="form-name" value="contact"/>
+                  <input type="hidden" name="contact" value="contact"/>
                 <label>Name </label>
                 <input type = "text" name = "name"/>
                 <label> Email</label>
@@ -87,7 +87,7 @@ const Form = (props) => {
                     backgroundColor:"grey",
                     cursor:"pointer",
                     border:"none"}}type = "submit"  > Send </button>
-            </motion.form> 
+            </form> 
             <motion.div 
             initial = {{
                 y:-10,
