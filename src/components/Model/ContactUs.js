@@ -63,7 +63,7 @@ const Form = (props) => {
     
     <div className = {classes.FormPosition} >
               <motion.form
-              data-netlify="true"
+              
               netlify
               onSubmit="submit"
               name = "contact"
@@ -92,15 +92,15 @@ const Form = (props) => {
                   <input type="hidden" name="form-name" value="contact"/>
                 <label>
                   Name 
-                <input type = "text" id = "name" value = {data.name}   onChange={setdata} />
+                <input type = "text" id = "name"  />
                 </label>
                 <label>
                    Email
-                <input type = "email" id = "email" value = {data.email}   onChange={setdata} />
+                <input type = "email" id = "email"  />
                 </label>
                 <label>
                    Mobile 
-                <input type = "number" id = "phone" value = {data.phone}  onChange={setdata} />
+                <input type = "number" id = "phone"  />
                 </label>
                 <label>
                     Message
@@ -108,7 +108,7 @@ const Form = (props) => {
                 style={{
                     height:100
                 }}
-                 type = "text" id = "message"  value = {data.message}  onChange={setdata} />
+                 type = "text" id = "message"   />
                 </label>
                
                 
@@ -122,7 +122,7 @@ const Form = (props) => {
                     borderRadius:"15px",
                     backgroundColor:"grey",
                     cursor:"pointer",
-                    border:"none"}}type = "submit" value = "Submit" />
+                    border:"none"}}type = "submit" > Send </button>
             </motion.form> 
             <motion.div 
             initial = {{
