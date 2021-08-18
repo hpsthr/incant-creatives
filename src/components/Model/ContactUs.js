@@ -32,61 +32,47 @@ const Form = (props) => {
        
     // }
 
-    const submitData = async (e) => {
-        e.preventDefault()
-      
-
-
-    }
+   
 
     return(
     
     
     <div className = {classes.FormPosition} style={{...props.style}} >
-              <form
+              <motion.form
               
               data-netlify = "true"
               onSubmit="submit"
               name = "contact"
               method = "POST"
-            //   initial = {{
-            //       y:"58vh",
-            //       scaleY:0.08,
-            //       scaleX:0.65
-            //   }}
+              initial = {{
+                  y:"58vh",
+                  scaleY:0.08,
+                  scaleX:0.65
+              }}
               
-            //   animate = {form ? {
-            //       y:"3vh",
-            //       scaleY:1,
-            //       scaleX:1,
-            //       originY:0,
-            //   }:{}}
+              animate = {form ? {
+                  y:"3vh",
+                  scaleY:1,
+                  scaleX:1,
+                  originY:0,
+              }:{}}
               
-            //   transition ={{
-            //       type:"spring",
+              transition ={{
+                  type:"spring",
                   
-            //       ease:"easeInOut",
-            //       duration:0.6
-            //   }}
+                  ease:"easeInOut",
+                  duration:0.6
+              }}
               className = {classes.Form}
                >
                   <input type="hidden" name="form-name" value="contact"/>
                 <label>Name </label>
                 <input type = "text" id = "name"/>
-                <label>
-                   Email
-                   
-                </label>
+                <label> Email</label>
                 <input type = "email" id = "email"/>
-                <label>
-                   Mobile 
-                   
-                </label>
+                <label>Mobile </label>
                 <input type = "number" id = "phone"/>
-                <label>
-                    Message
-                    
-                </label>
+                <label>Message</label>
                 <textarea style={{height:100}}type = "text" id = "message"></textarea>
                
                 
@@ -100,8 +86,8 @@ const Form = (props) => {
                     borderRadius:"15px",
                     backgroundColor:"grey",
                     cursor:"pointer",
-                    border:"none"}}type = "submit" onClick = {submitData} > Send </button>
-            </form> 
+                    border:"none"}}type = "submit"  > Send </button>
+            </motion.form> 
             <motion.div 
             initial = {{
                 y:-10,
