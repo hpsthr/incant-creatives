@@ -90,7 +90,7 @@ const setDrop = () => {
         form, 
         setForm
          }}>
-           {form ? <Form click = {() => { setForm(false); setDrop(false)}}/> :null}
+            <Form style = {{display: form ? "flex" : "none"}} click = {() => { setForm(false); setDrop(false)}}/>
            <BackDrop />
            
         <Cockpit panel = {menuShow.showMenu}  click = {toggleMenuHandler}/>

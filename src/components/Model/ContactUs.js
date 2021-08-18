@@ -32,42 +32,23 @@ const Form = (props) => {
        
     // }
 
-    // const submitData = async (e) => {
-    //     e.preventDefault()
-    //    DB.collection("Inquiry")
-    //    .add({
-    //        name:data.name,
-    //        email:data.email,
-    //        mobile:data.phone,
-    //        message:data.message,
-    //    })
-    //    .then(() => {
-    //        console.log("submit successfully");
-    //    })
-    //    .catch ( (err) => {
-    //        console.log(err)
-    //    })
-       
-    //    setData({
-    //     name:"",
-    //     email:"",
-    //     phone:"",
-    //     message:"",
-    //    })
+    const submitData = async (e) => {
+        e.preventDefault()
+      
 
 
-    // }
+    }
 
     return(
     
     
-    <div className = {classes.FormPosition} >
+    <div className = {classes.FormPosition} style={{...props.style}} >
               <motion.form
               
-              netlify
+              data-netlify = "true"
               onSubmit="submit"
               name = "contact"
-              method = "post"
+              method = "POST"
               initial = {{
                   y:"58vh",
                   scaleY:0.08,
@@ -122,7 +103,7 @@ const Form = (props) => {
                     borderRadius:"15px",
                     backgroundColor:"grey",
                     cursor:"pointer",
-                    border:"none"}}type = "submit" > Send </button>
+                    border:"none"}}type = "submit" onClick = {submitData} > Send </button>
             </motion.form> 
             <motion.div 
             initial = {{
