@@ -1,0 +1,78 @@
+.Mouse{
+    
+    display: block;
+    /* flex-direction: row; */
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transition:0.3s ease-in-out;
+    
+    
+    
+}
+
+.MouseShell{
+    border: 3px solid white;
+    position: absolute;
+    width: 33px;
+    height: 55px;
+    border-radius: 25px;
+    
+}
+
+.MouseScroll{
+    background:white;
+    width: 5px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    left: 14px;
+    border-radius: 2.5px;
+    -webkit-animation: Mouse__mouseWheel--3X3Wk 1.25s infinite linear;
+    animation: Mouse__mouseWheel--3X3Wk 1.25s infinite linear
+}
+
+
+@-webkit-keyframes Mouse__mouseWheel--3X3Wk {
+    0% {
+        -webkit-transform: scaleY(.4) translateY(0);
+        transform: scaleY(.4) translateY(0)
+    }
+
+    20% {
+        -webkit-transform: scaleY(1) translateY(0);
+        transform: scaleY(1) translateY(0)
+    }
+
+    60% {
+        -webkit-transform: scaleY(.4) translateY(12px);
+        transform: scaleY(.4) translateY(12px)
+    }
+
+    to {
+        -webkit-transform: scaleY(.4) translateY(0);
+        transform: scaleY(.4) translateY(0)
+    }
+}
+
+@keyframes Mouse__mouseWheel--3X3Wk {
+    0% {
+        -webkit-transform: scaleY(.4) translateY(0);
+        transform: scaleY(.4) translateY(0)
+    }
+
+    20% {
+        -webkit-transform: scaleY(1) translateY(0);
+        transform: scaleY(1) translateY(0)
+    }
+
+    60% {
+        -webkit-transform: scaleY(.4) translateY(12px);
+        transform: scaleY(.4) translateY(12px)
+    }
+
+    to {
+        -webkit-transform: scaleY(.4) translateY(0);
+        transform: scaleY(.4) translateY(0)
+    }
+}

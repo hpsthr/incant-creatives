@@ -1,0 +1,284 @@
+.About section {
+    display: block;
+
+    overflow: hidden;
+
+}
+
+.First {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.First img {
+    position: relative;
+    top: 20vh;
+    left: 59px;
+    max-width: 70%;
+}
+
+.LineBox {
+   
+    position:absolute;
+    width:85vw;
+    height:70px;
+    top: 0;
+    left:0;
+    background-color:red;
+}
+.Text {
+   
+    position: absolute;
+    width: 100%;
+    top: 80vh;
+    left:20vw;
+}
+
+.Text span {
+    display: inline-block;
+    margin: auto;
+    height: 45px;
+    position: relative;
+    font: normal normal normal 120px/50px montserrat;
+}
+
+.ContainerInline {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.SecondLeft {
+    display: inline;
+    position: relative;
+    width: 60vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+}
+
+.SecondLeft h1 {
+    overflow: hidden;
+    font-size: 50px;
+    font-family: montserrat;
+    color: red;
+}
+.SecondLeft p {
+    overflow: hidden;
+    font-size: 18px;
+    font-family: montserrat;
+}
+
+.SecondLeft h1 span {
+    display: inline-block;
+    position: relative;
+
+}
+
+.SecondRight {
+    display: inline;
+    position: relative;
+    width: 30vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+}
+
+.ThirdLeft {
+    display: inline;
+    position: relative;
+    width: 30vw;
+    height: 100vh;
+    top: 0;
+    left: 10vw;
+}
+
+.ThirdRight {
+    display: inline;
+    position: relative;
+    width: 60vw;
+    height: 100vh;
+    top: 0;
+    right: -10vw;
+}
+.ThirdRight h1 {
+    overflow: hidden;
+    font-size: 50px;
+    font-family: montserrat;
+    color: red;
+}
+.ThirdRight p {
+    overflow: hidden;
+    font-size: 18px;
+    font-family: montserrat;
+}
+
+.ThirdRight h1 span {
+    display: inline-block;
+    position: relative;
+
+}
+
+.UpBox {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 30vw;
+    height: 15vh;
+    background: red;
+}
+
+.DownBox {
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    width: 30vw;
+    height: 15vh;
+    background: red;
+}
+
+.Card {
+
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 180px;
+    background: rgb(255, 226, 226);
+    box-shadow: 3px 3px 5px #cdcdcd, 0 0 10px rgb(243 200 200);
+    border-radius: 12px;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Card img {
+    position: relative;
+
+}
+
+.Card p {
+    position: relative;
+    text-align: center;
+    font-family: montserrat;
+    margin: 2px;
+    padding: 0;
+    font-size: 10px;
+}
+
+.Line {
+    position: relative;
+    width: 110px;
+    height: 1px;
+    margin: 5px;
+    border-radius: 1px;
+
+    background: black;
+}
+
+.CardContainer {
+    position: relative;
+    top: 15vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.ContainerBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.ThinkingUp {
+    position: relative;
+    width: 90vw;
+    height: 25vh;
+
+}
+
+.ThinkingDown {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 75vh;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.ThinkingUp h1 {
+    overflow: hidden;
+    font-size: 50px;
+    font-family: montserrat;
+    color: red;
+}
+.ThinkingUp p {
+    overflow: hidden;
+    font-size: 18px;
+    font-family: montserrat;
+}
+
+.ThinkingUp h1 span {
+    display: inline-block;
+    position: relative;
+
+}
+
+.ThinkingDown img {
+    position: relative;
+    margin: 20px;
+}
+
+.KnowUp {
+    position: relative;
+    width: 90vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.KnowUp p{
+    color:red;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.KnowDown {
+
+    position: relative;
+
+    
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.KnowDown img {
+    position: relative;
+    top:3vh;
+    left: 7vw;
+    width: 67%;
+    height:auto;
+}

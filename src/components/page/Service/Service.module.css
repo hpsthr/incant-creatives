@@ -1,0 +1,134 @@
+.Action{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Upbox{
+    width:38%;
+    height:13vh;
+    position:fixed;
+    top:0;
+    left:0;
+    background: red;
+}
+.Downbox{
+    width: 38%;
+    height:13vh;
+    position:fixed;
+    bottom:0;
+    left:0;
+    background:red;
+}
+
+.LineBox {
+   
+    position:absolute;
+    width:85vw;
+    height:70px;
+    top: 0;
+    left:0;
+    background-color:red;
+}
+.First {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.First img {
+    position: relative;
+    top: 100px;
+    left: -10px;
+    max-width: 65%;
+    max-height: 84%
+}
+
+.Text {
+    
+    position: absolute;
+    
+    top: 52vh;
+    left: 4vw;
+}
+
+.Text span {
+    display: inline-block;
+    margin: auto;
+    height: 43px;
+    position: relative;
+    font: normal normal normal 120px/43px montserrat;
+}
+
+.ImageBox{
+    position: relative;
+    display: flex;
+    top: 16vh;
+    left: 6vw;
+    width: 43.3rem;
+    height: 30rem;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.ImageBox div{
+    margin: 7px 0px 0px 7px ;
+    width:10.2rem;
+    height:10.2rem;
+    background:red;
+    text-align: center;
+    cursor:pointer;
+}
+.ImageBox div:last-child{
+    
+    width:31.5rem ;
+    
+}
+.ImageBox div img{
+    width:10.2rem;
+    height:10.2rem;
+    object-fit: cover;
+    
+}
+.ImageBox div:last-child img{
+    
+    width:31.5rem ;
+    
+}
+
+.ImageBox div span {
+   position:relative;
+    display:block;
+    top:-10.5rem;
+    left:0;
+    width:10.2rem;
+    height:10.2rem;
+    background-color:grey;
+    opacity:0.5;
+    transition: 0.35s ease-in-out;
+}
+.ImageBox div span:hover{
+    opacity:0
+}
+.ImageBox div:last-child span{
+    width:31.5rem ;
+}
+.ImageBox div h2{
+    position:relative;
+    top:-17rem;
+    left:0;
+    font-size:13px;
+    font-weight:bold;
+    font-family: montserrat;
+    color:white;
+    z-index: 99;
+    transition: 0.35s ease-in-out;
+}
+.ImageBoc div h2 {
+    color:grey;
+}
+

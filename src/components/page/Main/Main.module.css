@@ -3,7 +3,7 @@
 
 .Main section{
     display: block;
-height:100%;
+
 overflow: hidden;
 
 
@@ -13,4 +13,259 @@ overflow: hidden;
 display: block;
 height:100%;
 overflow: hidden;
+}
+
+
+
+.First{
+    width:50vw;
+    height:100vh;
+
+
+}
+
+.Image{
+   margin: 0;
+    object-fit: cover;
+    
+    
+}
+
+
+.Box h1{
+    overflow:hidden;
+    font-size:20px;
+    font-family:montserrat;
+    color:red;
+    
+}
+
+.Shapewrap{
+    position:absolute;
+    right:0;
+    filter: drop-shadow(-5px 0px 13px rgba(50, 50, 0, 0.5));;
+}
+
+.Shape{
+    position:absolute;
+    width:55vw;
+    height:100vh;
+    clip-path:  polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+    box-shadow: 5px 5px 5px #646464, 0 0 0px rgb(255 0 0), 0 0 0px darkred;
+    background: red;
+    right:0
+
+}
+
+.Button{
+    width:auto !important;
+    height:auto !important;
+    position:absolute;
+    bottom: 15vh;
+    right:20vw;
+}
+
+
+
+.ImageBox{
+    position: relative;
+    display: flex;
+    top: 3vh;
+    left: 0vw;
+    width: 43.3rem;
+    height: 30rem;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.ImageBox div{
+    margin: 7px 0px 0px 7px ;
+    width:10.2rem;
+    height:10.2rem;
+    background:red;
+    text-align: center;
+    cursor:pointer;
+}
+.ImageBox div:last-child{
+    
+    width:31.5rem ;
+    
+}
+.ImageBox div img{
+    width:10.2rem;
+    height:10.2rem;
+    object-fit: cover;
+    
+}
+.ImageBox div:last-child img{
+    
+    width:31.5rem ;
+    
+}
+
+.ImageBox div span {
+   position:relative;
+    display:block;
+    top:-10.5rem;
+    left:0;
+    width:10.2rem;
+    height:10.2rem;
+    background-color:grey;
+    opacity:0.5;
+    transition: 0.35s ease-in-out;
+}
+.ImageBox div span:hover{
+    opacity:0
+}
+.ImageBox div:last-child span{
+    width:31.5rem ;
+}
+.ImageBox div h2{
+    position:relative;
+    top:-17rem;
+    left:0;
+    font-size:13px;
+    font-weight:bold;
+    font-family: montserrat;
+    color:white;
+    z-index: 99;
+    transition: 0.35s ease-in-out;
+}
+.ImageBoc div h2 {
+    color:grey;
+}
+
+.BoxTri{
+    position:relative;
+    top:28vh;
+}
+.BoxTri img{
+    position:relative;
+    
+}
+
+.PortBox {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    
+    position:relative;
+    top:2.5vh;
+    height:95vh;
+    width:48vw;
+
+}
+.PortBox div{
+    position:relative;
+    display:flex;
+    
+}
+.PortBox div:nth-child(1){
+    width:48vw;
+    height:30vh;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.PortBox div:nth-child(2){
+    width:16vw;
+    height:65vh;
+}
+.PortBox div:nth-child(3){
+    width:16vw;
+    height:65vh;
+    flex-direction: column;
+    flex-wrap:wrap;
+    
+}
+.PortBox div:nth-child(4){
+    width:16vw;
+    height:65vh;
+    flex-direction: column;
+    flex-wrap:wrap;
+     
+}
+.PortBox div:nth-child(1) span:nth-child(1){
+    width:16vw;
+    height:30vh;
+    
+}
+.PortBox div:nth-child(1) span:nth-child(2){
+    width:32vw;
+    height:30vh;
+    
+}
+.PortBox div:nth-child(1) span:nth-child(1) img{
+    width:16vw;
+    height:30vh;
+    object-fit:cover;
+}
+.PortBox div:nth-child(1) span:nth-child(2) img{
+    width:32vw;
+    height:30vh;
+    object-fit:cover;
+}
+.PortBox div:nth-child(2){
+    width:16vw;
+    height:65vh;
+    
+}
+.PortBox div:nth-child(2) img{
+    width:16vw;
+    height:65vh;
+    object-fit:cover;
+}
+.PortBox div:nth-child(3){
+    width:16vw;
+    height:65vh;
+    
+}
+.PortBox div:nth-child(3) span:first-child{
+    width:16vw;
+    height:32.5vh;
+    
+}
+.PortBox div:nth-child(3) span:last-child{
+    width:16vw;
+    height:32.5vh;
+    
+}
+.PortBox div:nth-child(3) span:first-child img{
+    width:16vw;
+    height:32.5vh;
+   object-fit:cover;
+}
+.PortBox div:nth-child(3) span:last-child img{
+    width:16vw;
+    height:32.5vh;
+   object-fit:cover;
+}
+.PortBox div:nth-child(4){
+    width:16vw;
+    height:65vh;
+     
+}
+
+.PortBox div:nth-child(4) span:first-child{
+    width:16vw;
+    height:32.5vh;
+    
+}
+.PortBox div:nth-child(4) span:last-child{
+    width:16vw;
+    height:32.5vh;
+    
+}
+.PortBox div:nth-child(4) span:first-child img{
+    width:16vw;
+    height:32.5vh;
+    object-fit:cover;
+}
+.PortBox div:nth-child(4) span:last-child img{
+    width:16vw;
+    height:32.5vh;
+    object-fit:cover;
 }

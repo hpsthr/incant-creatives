@@ -9,6 +9,7 @@
     padding: 10px 0;
     box-sizing:border-box;
     cursor:pointer;
+    transition:0.3s ease-in-out;
 }
 .ToggleBtnActive{
     position:absolute;
@@ -21,6 +22,7 @@
     padding: 10px 0;
     box-sizing:border-box;
     cursor:pointer;
+    transition:0.3s ease-in-out;
 }
 
 .ToggleBtn div {
@@ -47,15 +49,18 @@
 
 .ToggleBtnActive div:nth-child(2){
     background: transparent;
+
     
 }
 .ToggleBtnActive div:nth-child(1){
     background: white;
     transform:rotate(45deg) translate(13px,7px);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease-in-out;
     
 }
 .ToggleBtnActive div:nth-child(3){
     background: white;
     transform:rotate(-45deg) translate(8px,-3px);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease-in-out;
     
 }

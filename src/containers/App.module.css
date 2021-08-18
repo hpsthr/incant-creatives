@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -14,9 +15,9 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0;
 }
 
 ::-webkit-scrollbar-thumb {
   background: red; 
-  border-radius: 5px;}
+  border-radius: 0;}

@@ -1,0 +1,79 @@
+.Form{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:20vw;
+    height:60vh;
+    background-color:white;
+    border-radius: 5%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.Form input, button , textarea {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  }
+
+  .Form input , textarea{
+    display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.4);
+  text-align: center;
+}
+.FormPosition{
+
+    position:fixed;
+    z-index:81;
+    width:auto;
+    height:auto;
+    bottom:18vh;
+    right:20vw;
+
+    
+    
+
+}
+
+.Button {
+  width:35px;
+  height:35px;
+  border-radius:0 0 50% 50%;
+  position:absolute;
+  z-index: 82;
+  background-color:white;
+  display:flex;
+  flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    bottom:-38px;
+  right:0;
+  margin:0;
+  cursor:pointer;
+}
+.Button span {
+  position: absolute;
+  
+  display:block;
+  width:28px;
+  height:4px;
+  background:red;
+}
+
+.Button span:first-child{
+  transform:rotate(45deg)
+}
+
+.Button span:last-child{
+  transform:rotate(-45deg)
+}

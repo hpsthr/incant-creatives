@@ -1,18 +1,47 @@
 .NavigationPanel{
     display: flex;
     height: 100%;
-    width: 100%;
+    right:0;
     position: fixed;
     justify-content: flex-end;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-end;
     align-content: flex-end;
-    z-index: 1000;
+    z-index: 99;
 }
 .Icon{
     position: fixed;
     bottom: 101px;
     right: 101px;
+    transition:0.3s ease-in-out;
+    cursor:pointer;
+}
+
+.IMG{
+    opacity:0.5;
+    width: 55px;
+    height:55px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #646464, 0 0 0px rgb(255, 0, 0), 0 0 0px darkred; 
     
+
+}
+
+.IMG:hover{
+    
+    box-shadow: 10px 10px 10px #646464
+}
+
+.IMG img{
+    position:relative;
+    top:5px
+}
+
+.Transition{
+    transition:all 0.3s ease-in-out;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+
 }

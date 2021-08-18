@@ -1,0 +1,24 @@
+.Main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.Box{
+    position: relative;
+    margin:10px;
+    height:auto;
+    width:25vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 11px #646464;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+.Box p {
+ font-size: 15px;
+ margin:8px 15px;
+}

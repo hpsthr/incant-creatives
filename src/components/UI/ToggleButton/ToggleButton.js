@@ -4,10 +4,10 @@ import Context from '../../../context/ContextProp'
 
 const ToggleBtn = props => {
     
-    const menuContext = useContext(Context)
-
+    const {setDrop, valueShow , click} = useContext(Context)
+    
     return(
-        <div onClick = {props.click} className = {!menuContext.valueShow ? classes.ToggleBtn : classes.ToggleBtnActive}> 
+        <div onClick = {() => {click(); setDrop();}} className = {!valueShow ? classes.ToggleBtn : classes.ToggleBtnActive}> 
             <div> </div>
             <div> </div>
             <div> </div>

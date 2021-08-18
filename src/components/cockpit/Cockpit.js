@@ -1,7 +1,9 @@
 import React from "react";
 import NavigationPanel from "../Navigations/NavigationPanel/NavigationPanel";
 import Aux from '../../hoc/Auxillary'
-import Main from '../page/Main/Main'
+
+import Routes from '../Routers/Router'
+// import MainClass from '../page/Main/ClassMain'
 
 
 const cockpit = props => {
@@ -9,8 +11,9 @@ const cockpit = props => {
     return(
         <Aux>
             <NavigationPanel/>
-            <Main/>
-
+                <main style = {{overflow: 'hidden', postion: "absolute"}}>
+                    <Routes/>
+                </main>
         </Aux>
 
     )
