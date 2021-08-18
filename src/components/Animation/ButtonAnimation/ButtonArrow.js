@@ -1,5 +1,5 @@
 import React from 'react';
-
+import classes from './Button.module.css'
 import {motion} from "framer-motion"
 
 
@@ -79,7 +79,8 @@ const ButtonArrow = (props) => {
 
     return(
         
-            <motion.button
+            <motion.button 
+            className = {classes.Button}
             initial="rest" whileHover="hover" animate="rest" 
             onClick = {props.click}> 
             <motion.span

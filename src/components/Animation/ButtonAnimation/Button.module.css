@@ -1,7 +1,7 @@
 
 
 
- button {
+.Button {
     display:flex;
     font-family:montserrat;
     font-size:15px;
@@ -9,7 +9,7 @@
     border:none !important;
     background-color: transparent
 }
- button span{
+ .Button span{
     position: relative;
     margin:0;
     display:flex;
@@ -22,11 +22,11 @@
     align-items: center;
 }
 
- button span:first-child{
+ .Button span:first-child{
     width:40px;
     background-color:white;
 }
- button span:nth-child(2){
+ .Button span:nth-child(2){
 
    
     width:160px;
@@ -34,7 +34,7 @@
     
     background-color:red;
 }
- button span:nth-child(3){
+ .Button span:nth-child(3){
     right:4px;
     width:40px;
     
