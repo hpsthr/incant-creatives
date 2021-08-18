@@ -89,7 +89,7 @@ const Form = (props) => {
               }}
               className = {classes.Form}
                >
-                  <input type ="hidden" name = "inquiry" value = "contact"/>
+                  <input type="hidden" name="form-name" value="contact"/>
                 <label>
                   Name 
                 <input type = "text" id = "name" value = {data.name}   onChange={setdata} />
