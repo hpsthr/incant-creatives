@@ -140,7 +140,7 @@ class Fullpage extends PureComponent {
       this.windowClientHeight,
       window.innerHeight || 0,
     );
-    window.onload = () => {this.setState({number :0})}
+    
       
     
   this.windowClientHeight = document.documentElement.clientHeight;
@@ -200,12 +200,13 @@ class Fullpage extends PureComponent {
     if (this.time !== -1 && now - this.time < this.throttle) return; 
     this.time = now;
     e.preventDefault();
+    if(!this.context.backDrop){
             if(e.deltaY > 0){
             return this.next()
             }
             if(e.deltaY < 0){
              return this.back()
-            }
+            }}
          
     //   if(fancyScroll === this.newSlide){
     //     newSlide = fancyScroll

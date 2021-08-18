@@ -1,4 +1,4 @@
-import React, {useContext, useState, memo} from 'react';
+import React, {useContext} from 'react';
 // import Axios from 'axios'
 import Context from '../../context/ContextProp'
 import classes from './Model.module.css'
@@ -151,4 +151,4 @@ const Form = (props) => {
     )
 }
 
-export default memo(Form);
+export default Form
