@@ -67,13 +67,13 @@ const Form = (props) => {
                >
                   <input type="hidden" name="form-name" value="contact"/>
                 <label>Name </label>
-                <input type = "text" id = "name"/>
+                <input type = "text" name = "name"/>
                 <label> Email</label>
-                <input type = "email" id = "email"/>
+                <input type = "email" name = "email"/>
                 <label>Mobile </label>
-                <input type = "number" id = "phone"/>
+                <input type = "number" name= "phone"/>
                 <label>Message</label>
-                <textarea style={{height:100}}type = "text" id = "message"></textarea>
+                <textarea style={{height:100}}type = "text" name = "message"></textarea>
                
                 
                 
