@@ -3,7 +3,7 @@ import React, {useContext, useState, memo} from 'react';
 import Context from '../../context/ContextProp'
 import classes from './Model.module.css'
 import {motion} from 'framer-motion';
-import { DB } from '../../hoc/Firebase';
+// import { DB } from '../../hoc/Firebase';
 
 
 const Form = (props) => {
@@ -32,31 +32,31 @@ const Form = (props) => {
        
     }
 
-    const submitData = async (e) => {
-        e.preventDefault()
-       DB.collection("Inquiry")
-       .add({
-           name:data.name,
-           email:data.email,
-           mobile:data.phone,
-           message:data.message,
-       })
-       .then(() => {
-           console.log("submit successfully");
-       })
-       .catch ( (err) => {
-           console.log(err)
-       })
+    // const submitData = async (e) => {
+    //     e.preventDefault()
+    //    DB.collection("Inquiry")
+    //    .add({
+    //        name:data.name,
+    //        email:data.email,
+    //        mobile:data.phone,
+    //        message:data.message,
+    //    })
+    //    .then(() => {
+    //        console.log("submit successfully");
+    //    })
+    //    .catch ( (err) => {
+    //        console.log(err)
+    //    })
        
-       setData({
-        name:"",
-        email:"",
-        phone:"",
-        message:"",
-       })
+    //    setData({
+    //     name:"",
+    //     email:"",
+    //     phone:"",
+    //     message:"",
+    //    })
 
 
-    }
+    // }
 
     return(
     
@@ -88,7 +88,10 @@ const Form = (props) => {
               }}
               className = {classes.Form}
               data-netlify="true"
-              onSubmit={submitData} >
+              onSubmit="submit"
+              name = "contact"
+              method= "POST" >
+                  <input type ="hidden" name = "inquiry" value = "contact"/>
                 <label>
                   Name 
                 <input type = "text" id = "name" value = {data.name}   onChange={setdata} />
@@ -113,7 +116,7 @@ const Form = (props) => {
                 
                 
                 
-                <input style = {{
+                <button style = {{
                     marginTop:"20px",
                     position:"relative", 
                     width:"80px",
