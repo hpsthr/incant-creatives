@@ -97,7 +97,7 @@ class Fullpage extends PureComponent {
       slide: this.slides[0],
     });
 
-    
+   
 
     if(!this.props.offScroll){
 
@@ -140,6 +140,8 @@ class Fullpage extends PureComponent {
       this.windowClientHeight,
       window.innerHeight || 0,
     );
+    window.onload = () => {this.setState({number :0})}
+      
     
   this.windowClientHeight = document.documentElement.clientHeight;
   this.setState({

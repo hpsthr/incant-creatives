@@ -86,7 +86,9 @@ const Form = (props) => {
                   ease:"easeInOut",
                   duration:0.6
               }}
-              className = {classes.Form} onSubmit={submitData} >
+              className = {classes.Form}
+              data-netlify="true"
+              onSubmit={submitData} >
                 <label>
                   Name 
                 <input type = "text" id = "name" value = {data.name}   onChange={setdata} />
