@@ -38,10 +38,29 @@ const Form = (props) => {
     
     
     <div className = {classes.FormPosition} style={{...props.style}} >
-              <form
+              <motion.form
              
               name = "contact"
               method = "POST"
+              initial = {{
+                y:"58vh",
+                scaleY:0.08,
+                scaleX:0.65
+            }}
+            
+            animate = {form ? {
+                y:"3vh",
+                scaleY:1,
+                scaleX:1,
+                originY:0,
+            }:{}}
+            
+            transition ={{
+                type:"spring",
+                
+                ease:"easeInOut",
+                duration:0.6
+            }}
             
               className = {classes.Form}
                >
@@ -67,7 +86,7 @@ const Form = (props) => {
                     backgroundColor:"grey",
                     cursor:"pointer",
                     border:"none"}}type = "submit"  > Send </button>
-            </form> 
+            </motion.form> 
             <motion.div 
             initial = {{
                 y:-10,
@@ -98,22 +117,4 @@ const Form = (props) => {
 export default Form
 
 
-//   initial = {{
-            //       y:"58vh",
-            //       scaleY:0.08,
-            //       scaleX:0.65
-            //   }}
-              
-            //   animate = {form ? {
-            //       y:"3vh",
-            //       scaleY:1,
-            //       scaleX:1,
-            //       originY:0,
-            //   }:{}}
-              
-            //   transition ={{
-            //       type:"spring",
-                  
-            //       ease:"easeInOut",
-            //       duration:0.6
-            //   }}
+ 
