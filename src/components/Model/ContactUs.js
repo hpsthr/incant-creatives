@@ -65,7 +65,7 @@ const Form = (props) => {
             //   }}
               className = {classes.Form}
                >
-                  <input type="hidden" name="form-name" value="contact"/>
+                  <input type="hidden" name="contact"/>
                 <label>Name </label>
                 <input type = "text" name = "name"/>
                 <label> Email</label>
