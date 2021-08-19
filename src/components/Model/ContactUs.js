@@ -39,41 +39,21 @@ const Form = (props) => {
     
     <div className = {classes.FormPosition} style={{...props.style}} >
               <form
-              
-              data-netlify = "true"
-              onSubmit="submit"
+             
               name = "contact"
               method = "POST"
-            //   initial = {{
-            //       y:"58vh",
-            //       scaleY:0.08,
-            //       scaleX:0.65
-            //   }}
-              
-            //   animate = {form ? {
-            //       y:"3vh",
-            //       scaleY:1,
-            //       scaleX:1,
-            //       originY:0,
-            //   }:{}}
-              
-            //   transition ={{
-            //       type:"spring",
-                  
-            //       ease:"easeInOut",
-            //       duration:0.6
-            //   }}
+            
               className = {classes.Form}
                >
-                  <input type="hidden" name="contact"/>
-                <label>Name </label>
-                <input type = "text" name = "name"/>
-                <label> Email</label>
-                <input type = "email" name = "email"/>
-                <label>Mobile </label>
-                <input type = "number" name= "phone"/>
-                <label>Message</label>
-                <textarea style={{height:100}}type = "text" name = "message"></textarea>
+                  <input type="hidden" name="form-name" value = "contact"/>
+                <label>Name <input type = "text" name = "name"/> </label>
+                
+                <label> Email <input type = "email" name = "email"/> </label>
+                
+                <label>Mobile <input type = "number" name= "phone"/> </label>
+                
+                <label>Message  <textarea style={{height:100}}type = "text" name = "message"></textarea> </label>
+               
                
                 
                 
@@ -116,3 +96,24 @@ const Form = (props) => {
 }
 
 export default Form
+
+
+//   initial = {{
+            //       y:"58vh",
+            //       scaleY:0.08,
+            //       scaleX:0.65
+            //   }}
+              
+            //   animate = {form ? {
+            //       y:"3vh",
+            //       scaleY:1,
+            //       scaleX:1,
+            //       originY:0,
+            //   }:{}}
+              
+            //   transition ={{
+            //       type:"spring",
+                  
+            //       ease:"easeInOut",
+            //       duration:0.6
+            //   }}
