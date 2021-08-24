@@ -63,7 +63,7 @@ class Fullpage extends PureComponent {
     this.newSlide = null;
     this.viewportHeight = 0;
     this.scrollNow = false
-    this.throttle = 500;
+    this.throttle = 600;
     this.time = -1;
     
     
@@ -103,6 +103,7 @@ class Fullpage extends PureComponent {
 
     if (typeof window !== 'undefined') {
       window.addEventListener('mousewheel',this.handleScroll);
+      window.addEventListener('DomMouseScroll',this.handleScroll)
       window.addEventListener('wheel',this.handleScroll)
       window.addEventListener('resize', this.handleResize);
       }
@@ -194,19 +195,29 @@ class Fullpage extends PureComponent {
  
 
   handleScroll(e) {
+    let dY = e.deltaY
     this.transitionTiming = this.props.transitionTiming
     const now = Date.now();
  
     if (this.time !== -1 && now - this.time < this.throttle) return; 
     this.time = now;
-    e.preventDefault();
+
+
+    
+
     if(!this.context.backDrop){
-            if(e.deltaY > 0){
+      console.log(dY);
+      // if(!this.ticking) return;
+            if(dY >= 25){
+              dY = 25
             return this.next()
             }
-            if(e.deltaY < 0){
+            if(dY <= -25){
+              dY = 25
              return this.back()
             }}
+            
+          
          
     //   if(fancyScroll === this.newSlide){
     //     newSlide = fancyScroll

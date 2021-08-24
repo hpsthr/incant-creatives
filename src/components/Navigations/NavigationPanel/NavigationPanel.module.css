@@ -19,9 +19,10 @@
 }
 
 .IMG{
-    opacity:0.5;
+    opacity:0.9;
     width: 55px;
     height:55px;
+    background:white;
     border-radius: 50%;
     box-shadow: 5px 5px 5px #646464, 0 0 0px rgb(255, 0, 0), 0 0 0px darkred; 
     
@@ -35,7 +36,10 @@
 
 .IMG img{
     position:relative;
-    top:5px
+    top:8.5px;
+    max-height:38px;
+    max-width:38px;
+
 }
 
 .Transition{

@@ -108,7 +108,7 @@ class FullpageNavigation extends PureComponent {
               <div
                 style={{
                   
-                  border: "solid 1px black",
+                  border: "solid 1px red",
                   backgroundColor:(number === i) ? "red" : "transparent" ,
                    width:"24px", 
                    height:"24px", 

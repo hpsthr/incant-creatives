@@ -30,7 +30,7 @@ const Apage = () => {
 
     
     const {number} = useContext(ContextI)
-    const {height , showB, valueShow} = useContext(Context)
+    const {height , showB, valueShow, contact} = useContext(Context)
     
     
 
@@ -49,7 +49,7 @@ const Apage = () => {
                 name= {name}
                 style={{
                 opacity: !number < 1 || showB ? 1: 0.5,
-                transform: !valueShow ? "translate(-30px , 3px)": "translate(200px, 3px)",
+                transform: valueShow || contact ?  "translate(200px, 3px)": "translate(-30px , 3px)",
                 height: "38vh",
                 top: "30vh",
                 transition: "0.2s ease-out"

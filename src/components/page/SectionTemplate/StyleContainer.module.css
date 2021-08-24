@@ -50,10 +50,12 @@
 
 .Box div h1 {
     overflow: hidden;
-    font-size: 25px;
+    font-size: 30px;
     font-family: montserrat;
     color: red;
 }
 .Box div p {
+    width:36vw;
     white-space: pre-line;
+    font-size:18px;
 }

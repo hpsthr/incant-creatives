@@ -9,6 +9,8 @@ import DivBox from "../../../SectionTemplate/DivBox"
 import ContextI  from '../../../../../ScrollSection/FullpageContext';
 import ProgressiveImage from 'react-progressive-image'
 import {motion} from 'framer-motion'
+import {useHistory} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 
 import Ione from '../../../../../Resources/Service/Ione.jpg'
 import Itwo from '../../../../../Resources/Service/Itwo.jpg'
@@ -25,9 +27,9 @@ import whatwe from '../../../../../Resources/Main/whatwe.png'
 import { transitionAnimationScale } from '../../../../Animation/Motion';
 
 const WhatWe = props => {
-
-    
-    const {goto, slides, number}  = useContext(ContextI)
+    const history = useHistory()
+   
+    const { number,}  = useContext(ContextI)
     return(
         <ContainerInline>
 
@@ -40,16 +42,16 @@ const WhatWe = props => {
             <Text2 Y= {30} number={2} text = "Offer?"/>
             </h1>
             <div className = {classes.ImageBox}>
-        <div onClick = {() => goto(slides[2]) }><img alt="1" src={Ione}/><span></span><h2>Branding</h2></div>
-        <div onClick = {() => goto(slides[3]) }><img alt="1" src={Itwo}/><span></span><h2>Packaging</h2></div>
-        <div onClick = {() => goto(slides[4]) }><img alt="1" src={Ithree}/><span></span><h2>UI UX</h2></div>
-        <div onClick = {() => goto(slides[5]) }><img alt="1" src={Ifour}/><span></span><h2>R & D</h2></div>
-        <div onClick = {() => goto(slides[6]) }><img alt="1" src={Ifive}/><span></span><h2>Product Design</h2></div>
-        <div onClick = {() => goto(slides[7]) }><img alt="1" src={Isix}/><span></span><h2>Product Development</h2></div>
-        <div onClick = {() => goto(slides[8]) }><img alt="1" src={Iseven}/><span></span><h2>Service Design</h2></div>
-        <div onClick = {() => goto(slides[9]) }><img alt="1" src={Ieight}/><span></span><h2>Markeging</h2></div>
-        <div onClick = {() => goto(slides[10]) }><img alt="1" src={Inine}/><span></span><h2>Launching Strategies</h2></div>
-        <div onClick = {() => goto(slides[3]) }><img alt="1" src={Iten}/><span></span><h2> Learn With Us</h2></div>
+        <div onClick = {() => history.push('/service#branding')}><img alt="1" src={Ione}/><span></span><h2>Branding</h2></div>
+        <div onClick = {() => history.push('/service#packaging') }><img alt="1" src={Itwo}/><span></span><h2>Packaging</h2></div>
+        <div onClick = {() => history.push('/service#uiux') }><img alt="1" src={Ithree}/><span></span><h2>UI UX</h2></div>
+        <div onClick = {() => history.push('/service#research') }><img alt="1" src={Ifour}/><span></span><h2>R & D</h2></div>
+        <div onClick = {() => history.push('/service#productdesign') }><img alt="1" src={Ifive}/><span></span><h2>Product Design</h2></div>
+        <div onClick = {() => history.push('/service#productdevelopment') }><img alt="1" src={Isix}/><span></span><h2>Product Development</h2></div>
+        <div onClick = {() => history.push('/service#servicedesign') }><img alt="1" src={Iseven}/><span></span><h2>Service Design</h2></div>
+        <div onClick = {() => history.push('/service#marketing') }><img alt="1" src={Ieight}/><span></span><h2>Markeging</h2></div>
+        <div onClick = {() => history.push('/service#launchingstrategies') }><img alt="1" src={Inine}/><span></span><h2>Launching Strategies</h2></div>
+        <div onClick = {() => history.push('/service') }><img alt="1" src={Iten}/><span></span><h2> Learn With Us</h2></div>
         
 
         </div>

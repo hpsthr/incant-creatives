@@ -49,6 +49,7 @@
     color: white;
     transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     transform:rotate(-90deg);
+    cursor: pointer;
 
 }
 

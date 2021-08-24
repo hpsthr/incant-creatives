@@ -6,6 +6,8 @@ import {BrowserRouter} from 'react-router-dom'
 import Form from "../components/Model/ContactUs"
 import Cockpit from '../components/cockpit/Cockpit'
 import axios from 'axios';
+import ModalContact from '../components/UI/ContactUs';
+
 
 
 
@@ -15,7 +17,7 @@ axios.defaults.headers.post['Content-Type'] = 'application/json'
 
 
 function App() {
-  
+
  
   
 
@@ -26,16 +28,23 @@ const [backDrop, setBackDrop] = useState(false)
 const [scrollOff, setScrollOff] = useState(false)
 const [number , setNumber] = useState('0')
 const [path , setPath] = useState(null)
+const [contact, setContact] = useState(false)
 const [nav, setNav] = useState({
   translateY:0,
   pageYOffset:0,
 })
 const [form, setForm] = useState(false)
 
+
+
 React.useEffect(() => {
   window.addEventListener("resize", () => setHeight(window.innerHeight));
+  setNumber(0)
 }, [])
 
+// React.useEffect(() => {
+//   setPath(location)
+// }, [location])
 
 
 React.useEffect(() => {
@@ -87,13 +96,16 @@ const setDrop = () => {
         setNav,
         scrollOff, 
         setScrollOff, 
+        setContact,
+        contact,
         form, 
         setForm
          }}>
             <Form style = {{display: form ? "flex" : "none"}} click = {() => { setForm(false); setDrop(false)}}/>
            <BackDrop />
-           
+           <ModalContact show = {contact} setContact= {setContact} setDrop = {setBackDrop}/>
         <Cockpit panel = {menuShow.showMenu}  click = {toggleMenuHandler}/>
+      
       </Context.Provider>
     </div>
     </BrowserRouter>

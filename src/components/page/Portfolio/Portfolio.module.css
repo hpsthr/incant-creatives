@@ -239,3 +239,13 @@ object-fit:cover;
    object-fit:cover;
 
 }
+
+.DropBox{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:40vw;
+    height:56vh;
+    background-color:grey;
+    opacity:0
+}

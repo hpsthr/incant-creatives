@@ -17,6 +17,29 @@ import two1 from '../../../../../Resources/Portfolio/Images/AsstOne.png'
 import three1 from '../../../../../Resources/Portfolio/Images/three1.png'
 import four1 from '../../../../../Resources/Portfolio/Images/four1.jpg'
 
+const spanMotion1 = {
+    rest: {
+      opacity:0,
+      
+      transition: {
+          
+        duration:0.3, 
+        type: "tween",
+        ease: "easeIn"
+      }
+    },
+    hover: {
+      opacity:0.7,
+      
+      transition: {
+        
+        duration: 0.3,
+        type: "tween",
+        ease: "easeOut"
+      }
+    }
+  };
+
 const PortfolioInfo = () => {
 
     const {number} = useContext(ContextProp)
@@ -34,12 +57,23 @@ transition = {{
     }}
 className = {classes.LineBox}></motion.div>
 <div className = {classes.PortBox}>
-    <div className = {classes.FirstBlock}>
-        <span><Imgpro img = {first1}/></span>
-        <span><Imgpro img = {first2}/></span>
-        <span><Imgpro img = {first3}/></span>
-        <span><Imgpro img = {first3}/></span>
-    </div>
+    <motion.div
+    initial="rest" whileHover="hover" animate="rest" 
+    className = {classes.FirstBlock}>
+        
+        <motion.span><Imgpro img = {first1}/></motion.span>
+        <motion.span><Imgpro img = {first2}/></motion.span>
+        <motion.span><Imgpro img = {first3}/></motion.span>
+        <motion.span><Imgpro img = {first3}/></motion.span>
+        <motion.drop
+        variants = {spanMotion1}
+        className = {classes.DropBox}
+        >
+            <h1>
+                Indian Body Care
+            </h1>
+        </motion.drop>
+    </motion.div>
     <div><Imgpro img = {two1}/></div>
     <div className = {classes.SecondBox}>
         <span><Imgpro img = {three1}/></span>

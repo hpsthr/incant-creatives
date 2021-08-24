@@ -1,0 +1,10 @@
+
+.CardBox{
+    top:30vh;
+    left:8vw;
+    
+    position:absolute;
+    display:flex;
+    flex-direction:row;
+
+}

@@ -269,3 +269,27 @@ overflow: hidden;
     height:32.5vh;
     object-fit:cover;
 }
+
+.TextMain{
+    overflow:hidden;
+    font-family:montserrat;
+    font-size:60px;
+    color:red;
+}
+.IconBox{
+    position:relative;
+    top:5vh;
+    left:-60px;
+    width:30vw;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.IconBox div svg {
+    color:rgb(0, 0, 0);
+    transition:all 200ms ease-in-out;
+}
+.IconBox div svg:hover {
+    color:red;
+}

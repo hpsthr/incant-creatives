@@ -11,7 +11,7 @@ import {motion} from 'framer-motion'
 
 const NavigationPanel = props => {
 
-const {showB, valueShow, number, path, setNumber, setPath} = useContext(Context)
+const {showB, valueShow, number, path, setNumber, setPath,contact} = useContext(Context)
 
 const clicked = (name) => {
     
@@ -27,12 +27,12 @@ const clicked = (name) => {
                 position:'fixed',
                 top: "27px",
                 right:"13px",
-                transform:!valueShow ? "translate(-30px , 3px)" :"translate(200px, 3px)",
+                transform:valueShow || contact  ? "translate(200px, 3px)":"translate(-30px , 3px)",
                 
             }}
             >
             <motion.div
-            
+            style = {{}}
             whileHover = {{
                 scale:"1.1",
                 opacity:1,
@@ -47,7 +47,7 @@ const clicked = (name) => {
                      <img name = "main"  onClick= {(main) => {clicked(main.target.name)}} alt="" src={logo}/> 
                 </Link>
             </motion.div></div>
-            <div style = {path === "main" ? {transform: showB  || !number < 1 ? "translate( 5px , 3px)" :"translate(200px, 3px)"} : {transform:"translate(5px, 3px)"}} 
+            <div style = {path === ("main" || "/") ? {transform: showB  || !number < 1 ? "translate( 5px , 3px)" :"translate(200px, 3px)"} : {transform:"translate(5px, 3px)"}} 
                 className={classes.Icon}>
             <ToggleBtn />
             </div>

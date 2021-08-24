@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React,{useContext, useState , useEffect} from 'react';
 import Aux from '../../../../hoc/Auxillary'
 import  {FullPageSections, FullpageSection, FullpageNavigation} from '../../../../ScrollSection/index'
 
@@ -6,6 +6,8 @@ import classes from '../Service.module.css'
 import Context from '../../../../context/ContextProp'
 import ContextI from '../../../../ScrollSection/FullpageContext';
 import { motion } from 'framer-motion';
+import {useLocation} from "react-router-dom"
+import { paragraph } from '../../../../Resources/Main/ServiceData';
 
 
 import Service from './Section/Service'
@@ -15,10 +17,66 @@ import ServiceTemp from '../../SectionTemplate/ServiceTemplate';
 
 const Mpage = (props) => {
 
-    const {number} = useContext(ContextI)
-    const {height, showB, valueShow} = useContext(Context)
+    const {number, goto, slides} = useContext(ContextI)
+    const {height, showB, valueShow, contact} = useContext(Context)
+    const [hash, setHash] = useState(null)
     const Dwidth = window.innerWidth - (window.innerWidth* 0.38)
+    const pathName = useLocation()
+  
+    // .hash.split("#")[1]
     
+
+    
+useEffect ( () => {
+     setHash(pathName.hash.split("#")[1])
+},[pathName.hash])
+
+        switch (hash) {
+            case "branding":
+            goto(slides[2])
+            setHash(null)
+            break;
+            case "packaging":
+            goto(slides[3])
+            setHash(null)
+            break;
+            case "uiux":
+            goto(slides[4])
+            setHash(null)
+            break;
+            case "research":
+            goto(slides[5])
+            setHash(null)
+            break;
+            case "productdesign":
+            goto(slides[6])
+            setHash(null)
+            break;
+            case "productdevelopment":
+            goto(slides[7])
+            setHash(null)
+            break;
+            case "servicedesign":
+            goto(slides[8])
+            setHash(null)
+            break;
+            case "marketing":
+            goto(slides[9])
+            setHash(null)
+            break;
+            case "launchingstrategies":
+            goto(slides[10])
+            setHash(null)
+            break;
+
+        
+            default:
+                
+                break;
+        }
+    
+   
+     
     const name  = {
         0:"Info",
         1:"Start",
@@ -33,20 +91,7 @@ const Mpage = (props) => {
         10:"Lanuching Strategies"
     }
     
-    const paragraph = [
-        {text: "Branding",
-        paragraph: " This is text that you know"},
-        {text:"Packaging", 
-        paragraph: "this is paragraph text that you have seen"},
-        {text:"Ui/nUx", 
-        paragraph: `this is text /n and it's you /n while we have to do this this is so nice of you /n \n /n \n /n "make this`},
-        {text: "R&d", paragraph: "making this was important and kind at the same time "},
-        {text: "Product /n Design", paragraph: "making this was important and kind at the same time "},
-        {text: "Product /n Development", paragraph: "making this was important and kind at the same time "},
-        {text: "Service /n Design", paragraph: "making this was important and kind at the same time "},
-        {text: "Marketing", paragraph: "making this was important and kind at the same time "},
-        {text: "Launching /n Strategies", paragraph: "making this was important and kind at the same time "},
-    ]
+    
     
   
     return (
@@ -70,7 +115,7 @@ const Mpage = (props) => {
         }
         style={{
         opacity:!number < 1 || showB ? 1 : 0.5,
-        transform: !valueShow ? "translate(-30px , 3px)" :"translate(200px, 3px)",
+        transform:valueShow || contact ?  "translate(200px, 3px)": "translate(-30px , 3px)",
 
         height: "38vh",
         top:"30vh",
