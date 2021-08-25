@@ -3,17 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ap.cx/react-fullpage": "^0.2.0",
-    "@fullpage/react-fullpage": "^0.1.19",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "axios": "^0.21.1",
-    "crypto-js": "^4.1.1",
     "env": "0.0.2",
-    "firebase": "^8.9.0",
     "framer-motion": "^4.1.17",
-    "gsap": "^3.7.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icon": "^1.0.0",
@@ -25,8 +19,6 @@
     "react-scripts": "4.0.3",
     "react-simple-image-slider": "^2.1.2",
     "react-transition-group": "^4.4.2",
-    "typescript": "^4.3.5",
-    "utilzed": "^0.2.5",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
