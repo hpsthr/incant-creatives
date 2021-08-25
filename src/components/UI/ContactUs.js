@@ -49,12 +49,14 @@ return(
 <motion.div
 initial= "init"
 animate = {show ? "animation" : "init"}
+
 variants = {animateContact}
 transition = {{
-    delay:0.1,
+    delay:0.0,
     duration:0.6,
     type:"tween",
 }}
+className = {classes.ContactText}
 >
     <h1>Contact</h1>
     <p>+919999999999</p>

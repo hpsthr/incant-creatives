@@ -148,6 +148,7 @@ transition = {{
     duration:0.6,
     type:"tween",
 }}
+className = {classes.ContactText}
 >
     <h1>Contact</h1>
     <p>+919999999999</p>

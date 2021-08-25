@@ -7,7 +7,7 @@ import About from '../page/About/About'
 import Work from '../page/Portfolio/Portfolio'
 import Contact from '../page/Contact/Contact.js'
 import Service from '../page/Service/Service.js'
-import Inquiry from '../page/Inquiry/InquiryPage'
+
 
 import {AnimatePresence} from 'framer-motion'
 
@@ -31,7 +31,7 @@ const Router = () => {
         <Route path = "/work" exact  component ={Work}/>
         <Route path = "/service" exact  component ={Service}/>
         <Route path = "/contact" exact  component ={Contact}/>
-        <Route path = "/inquiry" exact  component ={Inquiry}/>
+        
         </Switch>
         </AnimatePresence>
         // </TransitionGroup>

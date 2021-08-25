@@ -47,7 +47,7 @@ const clicked = (name) => {
                      <img name = "main"  onClick= {(main) => {clicked(main.target.name)}} alt="" src={logo}/> 
                 </Link>
             </motion.div></div>
-            <div style = {path === ("main" || "/") ? {transform: showB  || !number < 1 ? "translate( 5px , 3px)" :"translate(200px, 3px)"} : {transform:"translate(5px, 3px)"}} 
+            <div style = {path === "main" || path === "/" ? {transform: showB  || !number < 1 ? "translate( 5px , 3px)" :"translate(200px, 3px)"} : {transform:"translate(5px, 3px)"}} 
                 className={classes.Icon}>
             <ToggleBtn />
             </div>

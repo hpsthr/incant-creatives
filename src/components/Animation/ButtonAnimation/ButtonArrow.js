@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Button.module.css'
 import {motion} from "framer-motion"
-
+import {CgArrowLongRight} from 'react-icons/cg'
 
 const spanMotion1 = {
     rest: {
@@ -84,21 +84,24 @@ const ButtonArrow = (props) => {
             initial="rest" whileHover="hover" animate="rest" 
             onClick = {props.click}> 
             <motion.span
-            style = {{border: "3px solid white"}}
+           
             variants = {spanMotion1}
             >
-              <motion.div ></motion.div>
+              <CgArrowLongRight style= {{position:"relative" , top:1}} color = "red" fontSize = {25} />
             </motion.span>
 
 
             <motion.span
-            style = {{border: "3px solid white"}}
+           
             variants = {spanMotion2}
             >Send Us inquiry</motion.span>
             <motion.span
-            style = {{border: "3px solid white"}}
+           
             variants = {spanMotion3}
-            ></motion.span>
+            >
+            <CgArrowLongRight style= {{position:"relative" , top:1}} color = "white" fontSize = {25} />
+              
+            </motion.span>
             </motion.button>
         
     )

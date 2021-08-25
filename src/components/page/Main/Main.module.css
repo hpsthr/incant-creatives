@@ -287,9 +287,33 @@ overflow: hidden;
     align-items:center;
 }
 .IconBox div svg {
-    color:rgb(0, 0, 0);
+    color:rgb(250, 0, 0);
     transition:all 200ms ease-in-out;
 }
 .IconBox div svg:hover {
-    color:red;
+    color:rgb(128, 0, 0);
+}
+
+.ContactText {
+    position:relative;
+    top:25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ContactText h1 {
+font-family:montserrat;
+font-size: 25px;
+color:white;
+margin:0;
+
+}
+.ContactText p {
+    text-align: center;
+    font-family: montserrat;
+    font-size:16px;
+    color:white;
+    width:18vw;
+    
 }

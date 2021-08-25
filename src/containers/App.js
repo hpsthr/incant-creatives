@@ -5,15 +5,12 @@ import BackDrop from '../components/UI/BackDrop'
 import {BrowserRouter} from 'react-router-dom'
 import Form from "../components/Model/ContactUs"
 import Cockpit from '../components/cockpit/Cockpit'
-import axios from 'axios';
+
 import ModalContact from '../components/UI/ContactUs';
 
 
 
 
-axios.defaults.baseURL = "https://incant-creatives-default-rtdb.firebaseio.com"
-axios.defaults.headers.common["Authorization"] = "AAAAJDKkfPg:APA91bEhFAlaDTGctuN5ol_wNaqhObFYX1l2N80LU01yZ0_sE-FmjMP-Wy9C6z4SOuLINKgvkoNhuriEHE-xBNRuTHD_IRoBcwPmTpAeFSFcg_kkpSej7LpYfQESEPNAbLehxIkkE9Aa"
-axios.defaults.headers.post['Content-Type'] = 'application/json'
 
 
 function App() {

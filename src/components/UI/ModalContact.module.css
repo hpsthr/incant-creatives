@@ -29,3 +29,27 @@
 .IconBox div svg:hover {
     color:red;
 }
+
+.ContactText {
+    position:relative;
+    top:0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ContactText h1 {
+font-family:montserrat;
+font-size: 25px;
+color:rgb(3, 3, 3);
+margin:0;
+
+}
+.ContactText p {
+    text-align: center;
+    font-family: montserrat;
+    font-size:16px;
+    color:rgb(3, 3, 3);
+    width:18vw;
+    
+}
