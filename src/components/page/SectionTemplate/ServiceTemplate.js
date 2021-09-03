@@ -17,11 +17,12 @@ const {number} = useContext(ContextProp)
         <div className = {classes.Box}>
            <div style = {{margin:"20vh 10vw", textAlign: "left"}}>
                         <h1>
-                              {props.text.map(el => {return(<Aux><Text2 del = {0.05} dur={0.15} Y={"25px"} number = {props.number} text = {el}/> &nbsp;</Aux>)} )}
+                              {props.text.map(( el, i) => {return(<Aux key = {i}><Text2 del = {0.05} dur={0.15} Y={"25px"} number = {props.number} text = {el}/> &nbsp;</Aux>)} )}
                               
                         </h1>
-                        {props.paragraph.map(el => 
+                        {props.paragraph.map(( el , i) => 
                         <motion.p 
+                        key = {i}
                         initial= "init"
                         animate = { number === props.number ? "animation" : "init"}
                         variants = {transitionAnimationText}

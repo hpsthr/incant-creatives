@@ -1,8 +1,8 @@
 import React from "react";
 
-const CardItem: React.SFC = ({ title, subtitle, img, style }) => (
+const CardItem: React.SFC = ({ title, subtitle, img, style, key }) => (
   <div
-  
+    key = {key}
     style={{
       width: 200,
       height: 310,

@@ -56,7 +56,7 @@ const IMGScroller = () => {
                 dynamicHeight>
                 {img[number].map((el, index) => 
                     
-                        <img style={{maxHeight:height, maxWidth:window.innerWidth - (window.innerWidth * 0.5)}} className = {classes.Pro}  alt = {index} src={el}></img>
+                        <img style={{maxHeight:height, maxWidth:window.innerWidth - (window.innerWidth * 0.5)}} key = {index} className = {classes.Pro}  alt = {index} src={el}></img>
                     )}
             </Carousel>
  

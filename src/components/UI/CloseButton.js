@@ -5,7 +5,7 @@ const CloseButton = ({click, style}) => {
 
     return(
         
-        <a href style= {{...style}} onClick={click} className={classes.closeButton}>
+        <a href="true" style= {{...style}} onClick={click} className={classes.closeButton}>
         <div className={classes.in}>
           <div className={classes.closeButtonBlock}></div>
           <div className={classes.closeButtonBlock}></div>

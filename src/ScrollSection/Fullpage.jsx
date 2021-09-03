@@ -206,7 +206,7 @@ class Fullpage extends PureComponent {
     
 
     if(!this.context.backDrop){
-      console.log(dY);
+      
       // if(!this.ticking) return;
             if(dY >= 25){
               dY = 25

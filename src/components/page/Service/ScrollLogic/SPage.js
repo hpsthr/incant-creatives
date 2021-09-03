@@ -139,9 +139,9 @@ useEffect ( () => {
             </FullpageSection>
 
             {paragraph.map((el, i) => 
-                <FullpageSection className={classes.Action} style={{height: height}}>
+                <FullpageSection key = {i} className={classes.Action} style={{height: height}}>
                 <div  style={{width:Dwidth, height: height,}}>
-                    <ServiceTemp number ={i+2} text = {el.text.split("/n").map(el => el)} paragraph ={el.paragraph.split("/n").map(el => el)}/>
+                    <ServiceTemp number ={i+2} text = {el.text.split("/n")} paragraph ={el.paragraph.split("/n")}/>
                 </div>
             </FullpageSection>
                 

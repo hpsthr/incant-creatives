@@ -188,7 +188,7 @@ export default class CardSlider extends React.Component<CardProps, CardState> {
 
   handleChange = index => {
     const { list, onChange } = this.props;
-    console.log(this.state.activeIndex)
+    
     onChange && onChange(index, list[index]);
   };
 }

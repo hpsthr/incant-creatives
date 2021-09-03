@@ -58,7 +58,7 @@ return(
             <motion.li initial="rest" whileHover="hover" animate="rest"   name = {"about"}><NavLink  activeStyle={{transform:"rotate(0deg)"}}   onClick= {(main) => {clicked(main.target.name)}} name = "about" to = "/about"><motion.span variants = {spanMotion1}>About</motion.span ></NavLink></motion.li>
             <motion.li initial="rest" whileHover="hover" animate="rest"  name = {"work"}><NavLink  activeStyle={{transform:"rotate(0deg)"}}    onClick= {(main) => {clicked(main.target.name)}} name = "work" to = "/work"><motion.span variants = {spanMotion1}>Portfolio</motion.span></NavLink></motion.li>
             <motion.li initial="rest" whileHover="hover" animate="rest"  name = {"service"}><NavLink  activeStyle={{transform:"rotate(0deg)"}} onClick= {(main) => {clicked(main.target.name)}} name = "service" to = "/service"><motion.span variants = {spanMotion1}>Service</motion.span></NavLink></motion.li>
-            <motion.li initial="rest" whileHover="hover" animate="rest"  name = {"contact"}><a href onClick = {() => {setContact(true); click()}} name = "contact" to = "/contact"><motion.span variants = {spanMotion1}>Contact</motion.span></a></motion.li>
+            <motion.li initial="rest" whileHover="hover" animate="rest"  name = {"contact"}><a href= "true" onClick = {() => {setContact(true); click()}} name = "contact" to = "/contact"><motion.span variants = {spanMotion1}>Contact</motion.span></a></motion.li>
             
         </ul> 
         : null}
