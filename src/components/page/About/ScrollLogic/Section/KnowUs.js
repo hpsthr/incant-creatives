@@ -38,9 +38,7 @@ const KnowUs = props => {
                         delay:0.1,
                         duration:0.6,
                         type:"tween",
-                        
-
-                    }}
+                        }}
                     width="1920" height="auto" style={{ opacity: loading ? 0.5 : 1 }} src={src} alt="animage" />
                         )}
                     </ProgressiveImage>

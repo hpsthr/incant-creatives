@@ -6,7 +6,9 @@ import Context from '../../../../../context/ContextProp'
 
 import classes from "../../About.module.css"
 import Text2 from '../../../../Animation/TextAnimation/Text2';
-import { transitionAnimationText, transitionBoxEl,  } from './Motion';
+import ProgressiveImage from 'react-progressive-image';
+import whatwe from '../../../../../Resources/About/WhatWe.png'
+import {transitionAnimationText, transitionAnimationScale, transitionBoxEl,  } from '../../../../Animation/Motion';
 
 const What = (props) => {
     const {number } = useContext(Context)
@@ -18,7 +20,7 @@ const What = (props) => {
                           <h1>
                               <Text2 number = {1} text = "What"/> &nbsp;
                               <Text2 number = {1} text = " We"/> &nbsp;
-                              <Text2 number = {1} text = " Do"/> 
+                              <Text2 number = {1} text = " Do?"/> 
                               
                                </h1>
                           <motion.p
@@ -63,6 +65,22 @@ const What = (props) => {
                          }}
                         className = {classes.UpBox}></motion.div>
                             
+                            <div className = {classes.BoxTri}>
+                            <ProgressiveImage
+                            src ={whatwe}
+                            >
+                            {(src, loading) => (
+                            <motion.img 
+                            initial= "init"
+                            animate = {number === 1 ? "animation" : "init"}
+                            variants = {transitionAnimationScale}
+                            transition = {{delay:0.1, duration:0.6, type:"tween",}}
+                            style={{ opacity: loading ? 0.5 : 1, maxHeight:"320px" }} src={src} alt="animage" />
+                                )}
+                            </ProgressiveImage>
+                            </div>
+
+
                         <motion.div
                         initial= "init"
                         animate = {number === 1 ? "animation" : "init"}

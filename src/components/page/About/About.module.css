@@ -282,3 +282,11 @@
     width: 67%;
     height:auto;
 }
+.BoxTri{
+    position:relative;
+    top:28vh;
+}
+.BoxTri img{
+    position:relative;
+    
+}
