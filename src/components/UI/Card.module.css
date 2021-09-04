@@ -8,3 +8,16 @@
     flex-direction:row;
 
 }
+
+@media (max-width: 767px) {
+    .CardBox{
+        top:34vh;
+        left:-3vw;
+        z-index: 120;
+        position:absolute;
+        display:flex;
+        flex-direction:row;
+    
+    }
+
+}

@@ -26,8 +26,8 @@ const CardT = ({num}) => {
       <CardSlider
       list={items}
       renderItem={CardItem}
-      width={100}
-      boxWidth={500}
+      width={150}
+      boxWidth={400}
       opacity={0.9}
       scale={0.9}
       disableNext={false}

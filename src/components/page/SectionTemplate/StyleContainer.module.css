@@ -59,3 +59,47 @@
     white-space: pre-line;
     font-size:18px;
 }
+
+@media (max-width: 767px) {
+
+
+    .ContainerInline {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: flex-start;
+    }
+    
+    .SecondLeft {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+        width: 100vw;
+        height: 55vh;
+        top: 0;
+        left: 0;
+    
+    }
+    
+    .SecondRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+        width: 100vw;
+        height: 45vh;
+        top: 0;
+        right: 0;
+    } 
+    .UpBox {
+        display: none;
+       
+    }
+    
+    .DownBox {
+        display:none;
+    }
+}

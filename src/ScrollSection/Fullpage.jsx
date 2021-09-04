@@ -65,6 +65,10 @@ class Fullpage extends PureComponent {
     this.scrollNow = false
     this.throttle = 600;
     this.time = -1;
+
+    this.startY =0;
+
+  
     
     
     // binds
@@ -74,6 +78,8 @@ class Fullpage extends PureComponent {
     this.getIndex = this.getIndex.bind(this);
     // handle
     this.handleScroll = this.handleScroll.bind(this);
+    this.touchEnd = this.touchEnd.bind(this)
+    this.touchStart = this.touchStart.bind(this)
     this.handleResize = this.handleResize.bind(this);
     this.handleKeys = this.handleKeys.bind(this);
     // refs
@@ -106,6 +112,9 @@ class Fullpage extends PureComponent {
       window.addEventListener('DomMouseScroll',this.handleScroll)
       window.addEventListener('wheel',this.handleScroll)
       window.addEventListener('resize', this.handleResize);
+      window.addEventListener('touchstart' , this.touchStart, false )
+      window.addEventListener('touchmove' , (e) => {e.preventDefault()})
+      window.addEventListener('touchend' , this.touchEnd , false)
       }
 
     if (typeof document !== 'undefined') {
@@ -135,6 +144,9 @@ class Fullpage extends PureComponent {
   componentDidUpdate(prevProps, prevState) {
     window.addEventListener('mousewheel',this.handleScroll);
       window.addEventListener('wheel',this.handleScroll)
+      window.addEventListener('touchmove' , (e) => {e.preventDefault()})
+      window.addEventListener('touchstart' , this.touchStart  )
+      window.addEventListener('touchend' , this.touchEnd  )
     // window.addEventListener('scroll', this.handleScroll);
     
     this.viewportHeight = Math.max(
@@ -193,8 +205,47 @@ class Fullpage extends PureComponent {
   }
 
  
+ 
+
+touchStart(e) {
+  const touchobj = e.changedTouches[0]
+  this.startY = touchobj.pageY
+  e.preventDefault()
+}
+
+touchEnd(e) {
+  // if (this.props === undefined) return null;
+  this.transitionTiming = this.props.transitionTiming
+  const touchobj = e.changedTouches[0]
+  const distY = touchobj.pageY - this.startY
+  
+  const now = new Date() 
+  if (this.time !== -1 && now - this.time < this.throttle) return; 
+    this.time = now;
+
+    let dY = distY
+    
+    if(!this.context.backDrop){
+      
+      
+            if(dY >= 25){
+              
+            return this.back()
+            }
+            if(dY <= -25){
+              
+             return this.next()
+            }} 
+      
+            
+ 
+
+   
+
+}
 
   handleScroll(e) {
+    
     let dY = e.deltaY
     this.transitionTiming = this.props.transitionTiming
     const now = Date.now();

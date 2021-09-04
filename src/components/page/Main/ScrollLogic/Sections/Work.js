@@ -27,13 +27,13 @@ const Work = props => {
         <ContainerInline>
             <Left leftstyle = {{left:"10vw"}}>
             <DivBox number = {iNum}>
-            <div className ={classes.Box} style = {{margin:"20vh 2vw", textAlign: "left"}}>
+            <div className ={classes.Box} style = {window.innerWidth > 765 ? {margin:"20vh 2vw", textAlign: "left"}:{margin:"5vh -3vw", textAlign: "left"}}>
                     <h1>
                         <Text2 Y = {20} number = {iNum} text = "Our"/>&nbsp;
                         <Text2 Y = {20} number = {iNum} text = "Work"/>
                     </h1>
                     <motion.p
-                    style = {{fontSize:"14px" , width:"25vw"}}
+                    style = {window.innerWidth > 765 ? {fontSize:"14px" , width:"25vw"} : {width:"88vw"}}
                            initial= "init"
                            animate = {number === iNum ? "animation" : "init"}
                            variants = {transitionAnimationText}

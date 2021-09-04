@@ -20,14 +20,17 @@ const clicked = (name) => {
     
   
     return(
-        <div className= {classes.NavigationPanel}>
+        <div 
+        style = {{height:valueShow || contact  ? window.innerHeight : 0}}
+        className= {classes.NavigationPanel}>
             <div
             className = {classes.Transition}
             style= {{
                 position:'fixed',
                 top: "27px",
-                right:"13px",
-                transform:valueShow || contact  ? "translate(200px, 3px)":"translate(-30px , 3px)",
+                right:window.innerWidth > 765 ? "13px" : -12,
+                transform:valueShow || contact  ? `translate(200px, 3px) `:`translate(-30px , 3px) scale(${window.innerWidth > 765 ? 1 : 0.7})`,
+               
                 
             }}
             >

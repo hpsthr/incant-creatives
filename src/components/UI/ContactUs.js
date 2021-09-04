@@ -44,7 +44,7 @@ const ModalContact = ({show, setContact, setDrop}) => {
     }
 return(
 <div style = {{transform: show ? "scaleY(1)" : "scaleY(0)"}} className = {classes.ContactBox}>
-<CloseButton style = {{ position:"absolute",top:"5vh", left:"85vw"}} click = {clicked}/>
+<CloseButton style = {{ position:"absolute",top:window.innerWidth > 765 ?"5vh" : "3vh", left:window.innerWidth > 765 ? "85vw": "75vw"}} click = {clicked}/>
 
 <motion.div
 initial= "init"

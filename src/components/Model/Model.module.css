@@ -77,3 +77,29 @@
 .Button span:last-child{
   transform:rotate(-45deg)
 }
+
+@media (max-width: 767px) {
+
+  .Form{
+    position:relative;
+    left:13vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:85vw;
+    height:60vh;
+    background-color:white;
+    border-radius: 22px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.Button {
+
+    bottom:-35px;
+  right:-13vw;
+  margin:0;
+  cursor:pointer;
+}
+
+}

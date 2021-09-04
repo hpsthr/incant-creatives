@@ -35,7 +35,7 @@ const WhatWe = props => {
 
             <Left >
             <div className ={classes.Box} style = {{margin:"8vh 8vw", textAlign: "left"}} > 
-            <h1 style ={{fontSize:"30px"}}>
+            <h1 style ={window.innerWidth > 762 ? {fontSize: "30px"}: null}>
             
             <Text2 Y= {30} number={2} text = "What"/> &nbsp;
             <Text2 Y= {30} number={2} text = "We"/> &nbsp;
@@ -61,7 +61,7 @@ const WhatWe = props => {
             </Left>
             <Right rightstyle = {{right:"-5vw"}}>
               <DivBox number = {2}>
-                  <div className = {classes.BoxTri}>
+                  <div className = {classes.BoxTri} style = {window.innerWidth > 760 ?{display:"flex"}:{display:"none"}}>
               <ProgressiveImage
                     src ={whatwe}
                     >

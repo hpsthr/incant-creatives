@@ -35,8 +35,7 @@ const Page = (props) => {
         style={{
         opacity:!number < 1 || menuContext.showB ? 1 : 0.5,
         transform: !menuContext.valueShow ? "translate(-30px , 3px)" :"translate(200px, 3px)",
-        height: "38vh",
-        top:"30vh",
+        
         transition:"0.2s ease-out"
         
                 }}

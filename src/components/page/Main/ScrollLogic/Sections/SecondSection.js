@@ -1,5 +1,5 @@
 
-import React, {useContext} from 'react';
+import React, {useContext, } from 'react';
 import classes from '../../Main.module.css'
 import ProgressiveImage from 'react-progressive-image';
 import {motion} from 'framer-motion'
@@ -13,7 +13,16 @@ import ClockImg from '../../../../../Resources/Main/Clock.jpg'
 
 const Second = props => {
 
+
+
+
+
     const {number} = useContext(Context)
+   
+
+   
+
+
 return(
 
     <ContainerInline>
@@ -34,7 +43,7 @@ return(
                     style={{ opacity: loading ? 0.5 : 1,
                          }}
                     src={src} 
-                    width={`${window.innerWidth -(window.innerWidth * 0.45)}px`} height={`${window.innerHeight}px`}
+                    width={window.innerWidth > 760 ? `${window.innerWidth -(window.innerWidth * 0.45)}px` :`${window.innerWidth}px` } height={window.innerWidth > 760 ? `${window.innerHeight}px`: `${window.innerHeight -(window.innerHeight * 0.45)}px`}
                     alt="animage"
                     className={classes.Image} />
                         )}
@@ -42,7 +51,7 @@ return(
 
         </Left>
         <Right>
-            <div className ={classes.Box} style = {{margin:"20vh 10vw", textAlign: "left"}} > 
+            <div className ={classes.Box}  > 
             <h1>
             <Text2  Y={"20px"} number = {1} text = 'What'/>
             </h1>

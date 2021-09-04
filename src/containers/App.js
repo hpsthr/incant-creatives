@@ -5,19 +5,8 @@ import BackDrop from '../components/UI/BackDrop'
 import {BrowserRouter} from 'react-router-dom'
 import Form from "../components/Model/ContactUs"
 import Cockpit from '../components/cockpit/Cockpit'
-
 import ModalContact from '../components/UI/ContactUs';
-
-
-
-
-
-
 function App() {
-
- 
-  
-
 const [height, setHeight] = useState(window.innerHeight);
 const [disable, setDesable] = useState({showBurger:false})
 const [menuShow, menuShowState] = useState({showMenu:false})
@@ -39,9 +28,6 @@ React.useEffect(() => {
   setNumber(0)
 }, [])
 
-// React.useEffect(() => {
-//   setPath(location)
-// }, [location])
 
 
 React.useEffect(() => {
@@ -58,21 +44,16 @@ React.useEffect(() => {
     }
   });
 }, [])
-
 const toggleMenuHandler = () => {
  menuShowState({
     showMenu:!menuShow.showMenu
   })
    
 }
-
 const setDrop = () => {
   setBackDrop(!backDrop)
- 
-}
-
-  
-  return (
+ }
+return (
     <BrowserRouter>
     <div  className={Class.App}>
       

@@ -14,6 +14,7 @@ import WhatWe from './Sections/WhatWe'
 import Work from './Sections/Work';
 import OurClient from './Sections/OurClient';
 import WorkTogether from './Sections/WorkTogether';
+import WorkMini from './Sections/WorkTogetherMini';
 
 const Mpage = (props) => {
 
@@ -44,8 +45,8 @@ const Mpage = (props) => {
         style={{
         opacity:!number < 1 || showB ? 1 : 0.5,
         transform: valueShow || contact ?  "translate(200px, 3px)": "translate(-30px , 3px)",
-        height: "38vh",
-        top:"30vh",
+        
+        
         transition:"0.2s ease-out"
         
                 }}
@@ -78,7 +79,7 @@ const Mpage = (props) => {
             </FullpageSection>
 
             <FullpageSection style={{height: height}}>
-                <WorkTogether/>
+               {window.innerWidth > 765 ? <WorkTogether/> : <WorkMini/>} 
             </FullpageSection>
 
         </FullPageSections>

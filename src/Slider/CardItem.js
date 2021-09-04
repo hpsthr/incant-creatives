@@ -4,8 +4,8 @@ const CardItem: React.SFC = ({ title, subtitle, img, style, key }) => (
   <div
     key = {key}
     style={{
-      width: 200,
-      height: 310,
+      width: window.innerWidth > 765 ?  200 : 160,
+      height:  window.innerWidth > 765 ?  310 : 270,
       background: "white",
       color: "black",
       borderRadius: 10,

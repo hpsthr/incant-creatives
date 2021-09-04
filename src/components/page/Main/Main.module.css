@@ -31,13 +31,21 @@ overflow: hidden;
     
 }
 
+.Box {
+    margin:20vh 10vw ;
+    text-align: left;
 
+}
 .Box h1{
     overflow:hidden;
     font-size:20px;
     font-family:montserrat;
     color:red;
     
+}
+
+.Box p {
+    font-size:10px;
 }
 
 .Shapewrap{
@@ -316,4 +324,291 @@ margin:0;
     color:white;
     width:18vw;
     
+}
+
+@media (max-width: 767px) {
+    .Box {
+        margin:0 10vw ;
+        text-align: left;
+        
+    }
+    .Box h1{
+        overflow:hidden;
+        font-size:18px;
+        font-family:montserrat;
+        color:red;
+        
+    }
+    .Box p {
+        font-size:10px;
+    }
+    .PortBox {
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        overflow-y: scroll;
+        position:relative;
+        top:-16vh;
+        left: 6vw;
+        height:55vh;
+        width:100vw;
+    
+    }
+    .PortBox div{
+        position:relative;
+        display:flex;
+        
+    }
+    .PortBox div:nth-child(1){
+        width:50vw;
+        height:25vh;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    .PortBox div:nth-child(2){
+        width:25vh;
+        height:25vh;
+    }
+    .PortBox div:nth-child(3){
+        width:25vh;
+        height:25vh;
+        flex-direction: column;
+        flex-wrap:wrap;
+        
+    }
+    .PortBox div:nth-child(4){
+        width:25vh;
+        height:25vh;
+        flex-direction: column;
+        flex-wrap:wrap;
+         
+    }
+    .PortBox div:nth-child(1) span:nth-child(1){
+        width:25vw;
+        height:25vh;
+        
+    }
+    .PortBox div:nth-child(1) span:nth-child(2){
+        width:25vw;
+        height:25vh;
+        
+    }
+    .PortBox div:nth-child(1) span:nth-child(1) img{
+        width:25vh;
+        height:25vh;
+        object-fit:cover;
+    }
+    .PortBox div:nth-child(1) span:nth-child(2) img{
+        width:25vh;
+        height:25vh;
+        object-fit:cover;
+    }
+    .PortBox div:nth-child(2){
+        width:25vh;
+        height:25vh;
+    }
+    .PortBox div:nth-child(2) img{
+        width:25vh;
+        height:25vh;
+        object-fit:cover;
+    }
+    .PortBox div:nth-child(3){
+        width:25vh;
+        height:25vh;
+        
+    }
+    .PortBox div:nth-child(3) span:first-child{
+        width:25vh;
+        height:25vh;
+        
+    }
+    .PortBox div:nth-child(3) span:last-child{
+        width:25vh;
+        height:25vh;
+        
+    }
+    .PortBox div:nth-child(3) span:first-child img{
+        width:25vh;
+        height:25vh;
+       object-fit:cover;
+    }
+    .PortBox div:nth-child(3) span:last-child img{
+        width:25vh;
+        height:25vh;
+       object-fit:cover;
+    }
+    .PortBox div:nth-child(4){
+        width:25vh;
+        height:25vh;
+         
+    }
+    
+    .PortBox div:nth-child(4) span:first-child{
+        width:25vh;
+        height:25vh;
+        
+    }
+    .PortBox div:nth-child(4) span:last-child{
+        width:25vh;
+        height:25vh;
+        
+    }
+    .PortBox div:nth-child(4) span:first-child img{
+        width:25vh;
+        height:25vh;
+        object-fit:cover;
+    }
+    .PortBox div:nth-child(4) span:last-child img{
+        width:25vh;
+        height:25vh;
+        object-fit:cover;
+    }
+    .ImageBox{
+        position: relative;
+        display: flex;
+        top: 2vh;
+        left: 2vw;
+        width: 21rem;
+        height: 25rem;
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    
+    .ImageBox div{
+        margin: 7px 0px 0px 7px ;
+        width:5.9rem;
+        height:5.9rem;
+        background:red;
+        text-align: center;
+        cursor:pointer;
+    }
+    .ImageBox div:last-child{
+        
+        width:18.65rem ;
+        
+    }
+    .ImageBox div img{
+        width:5.9rem;
+        height:5.9rem;
+        object-fit: cover;
+        
+    }
+    .ImageBox div:last-child img{
+        
+        width:18.65rem ;
+        
+    }
+    
+    .ImageBox div span {
+       position:relative;
+        display:block;
+        top:-6.16rem;
+        left:0;
+        width:5.9rem;
+        height:5.9rem;
+        background-color:grey;
+        opacity:0.5;
+        transition: 0.35s ease-in-out;
+    }
+    .ImageBox div span:hover{
+        opacity:0
+    }
+    .ImageBox div:last-child span{
+        width:18.65rem ;
+    }
+    .ImageBox div h2{
+        position:relative;
+        top:-11rem;
+        left:0;
+        font-size:13px;
+        font-weight:bold;
+        font-family: montserrat;
+        color:white;
+        z-index: 99;
+        transition: 0.35s ease-in-out;
+    }
+    .ImageBoc div h2 {
+        color:grey;
+    }
+
+    .Shape{
+        position:absolute;
+        width:100vw;
+        height:55vh;
+       
+        box-shadow: 5px 5px 5px #646464, 0 0 0px rgb(255 0 0), 0 0 0px darkred;
+        background: red;
+        right:0
+    
+    }
+
+    .miniBox {
+        width: 100vw;
+        height:100vh;
+        background:red;
+    }
+    .IconBox{
+        position:relative;
+        top:60vh;
+        left:90px;
+        width:15vw;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items:center;
+    }
+    .IconBox div {
+        margin: 0 6px ;
+    }
+    .IconBox div svg {
+        color:rgb(255, 255, 255);
+        transition:all 200ms ease-in-out;
+    }
+    .IconBox div svg:hover {
+        color:rgb(128, 0, 0);
+    }
+    .ContactText {
+        position:relative;
+        top:15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ContactText h1 {
+    font-family:montserrat;
+    font-size: 20px;
+    color:white;
+    margin:0;
+    
+    }
+    .ContactText p {
+        text-align: center;
+        font-family: montserrat;
+        font-size:16px;
+        color:white;
+        width:85vw;
+        
+    }
+
+    .ButtonIn {
+        position:relative;
+        top:19vh;
+        width: 180px;
+        height: 45px;
+        background-color: white;
+        box-sizing: border-box;
+        border-radius:25px ;
+        font-size : 18px;
+        font-family: montserrat;
+        font-weight: 800;
+        color: red;
+        box-shadow: rgb(131, 128, 128) 0px 0px 25px;
+
+        
+    }
 }

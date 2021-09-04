@@ -4,13 +4,15 @@ import videoFl from '../../../../Resources/video_main.mp4'
 import classes from './Video.module.css'
 
 
-const video = props => {
+const Video = props => {
     
     return(
-    <video  src={videoFl} width="1920" height="1080" className={classes.Video} autoPlay loop muted>
+        <div className = {classes.videoBox}>
+    <video  src={videoFl}  className={classes.Video} autoPlay loop muted>
         
     </video>
+    </div>
     )
 }
 
-export default video
+export default Video

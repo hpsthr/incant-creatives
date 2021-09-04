@@ -31,7 +31,7 @@ const OurClient = props => {
             </Left>
             <Right >
                 <DivBox style = {{left:"5vw"}} number = {iNum}>
-                <div style={{left:"10vw"}} className = {classes.BoxTri}>
+                <div  className = {classes.BoxTri} style = {{display: window.innerWidth > 765 ? 'flex': " none" , left:"10vw"}}>
               <ProgressiveImage
                     src ={OurCli}
                     >
