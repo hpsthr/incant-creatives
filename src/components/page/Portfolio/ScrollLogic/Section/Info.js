@@ -2,6 +2,7 @@
 import React, {useContext} from 'react';
 import classes from '../../Portfolio.module.css'
 import ContextProp from '../../../../../context/ContextProp';
+import ContextI from '../../../../../ScrollSection/FullpageContext'
 import {motion} from 'framer-motion'
 import { transitionLine } from '../../../../Animation/Motion';
 import Aux from '../../../../../hoc/Auxillary'
@@ -43,6 +44,7 @@ const spanMotion1 = {
 const PortfolioInfo = () => {
 
     const {number} = useContext(ContextProp)
+    const {goto, slides}  = useContext(ContextI)
 return( 
     <Aux>
     
@@ -58,6 +60,7 @@ transition = {{
 className = {classes.LineBox}></motion.div>
 <div className = {classes.PortBox}>
     <motion.div
+    onClick =  {() => goto(slides[2]) }
     initial="rest" whileHover="hover" animate="rest" 
     className = {classes.FirstBlock}>
         
@@ -67,24 +70,66 @@ className = {classes.LineBox}></motion.div>
         <motion.span><Imgpro img = {first3}/></motion.span>
         <motion.drop
         variants = {spanMotion1}
-        className = {classes.DropBox}
+        className = {classes.DropBox1}
         >
             <h1>
                 Indian Body Care
             </h1>
         </motion.drop>
+
+
     </motion.div>
-    <div><Imgpro img = {two1}/></div>
-    <div className = {classes.SecondBox}>
+
+
+    <motion.div
+    onClick =  {() => goto(slides[1]) }
+    initial="rest" whileHover="hover" animate="rest"
+    >
+    <Imgpro img = {two1}/>
+    <motion.drop
+        variants = {spanMotion1}
+        className = {classes.DropBox2}
+        >
+            <h1>
+                Infiriry
+            </h1>
+        </motion.drop>
+    </motion.div>
+
+
+
+    <motion.div
+    onClick =  {() => goto(slides[3]) }
+    initial="rest" whileHover="hover" animate="rest"
+     className = {classes.SecondBox}>
         <span><Imgpro img = {three1}/></span>
         <span><Imgpro img = {three1}/></span>
+        <motion.drop
+        variants = {spanMotion1}
+        className = {classes.DropBox3}
+        >
+            <h1>
+                Araki Hotels
+            </h1>
+        </motion.drop>
 
         
-    </div>
-    <div className ={classes.ThirdBox}>
+    </motion.div>
+
+    <motion.div 
+    initial="rest" whileHover="hover" animate="rest"
+    className ={classes.ThirdBox}>
         <span><Imgpro img = {four1}/></span>
         <span><Imgpro img = {four1}/></span>
-    </div>
+        <motion.drop
+        variants = {spanMotion1}
+        className = {classes.DropBox4}
+        >
+            <h1>
+                Product Design
+            </h1>
+        </motion.drop>
+    </motion.div>
     
     <div className = {classes.Text}>
         <Text text = "Portfolio" number = {0}/>

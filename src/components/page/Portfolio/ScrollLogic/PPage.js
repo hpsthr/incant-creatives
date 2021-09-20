@@ -9,6 +9,8 @@ import First from './Section/First';
 
 import AsstOne from '../../../../Resources/Portfolio/Images/AsstOne.png'
 import AsstTwo from '../../../../Resources/Portfolio/Images/AsstTwo.png'
+import AsstThree from '../../../../Resources/Portfolio/Images/three1.png'
+import AsstFour from '../../../../Resources/Portfolio/Images/four1.jpg'
 import PortfolioInfo from './Section/Info';
 
 
@@ -17,8 +19,8 @@ const PPage = () => {
         0:"Info",
         1:"Infiriry",
         2:"Body Care",
-        3:"Fourth item",
-        4:"Fifth Item"
+        3:"Aeraki Hotel",
+        4:"Product Design"
     }
     
     const {number, translateY, goto, slides} = useContext(ContextI)
@@ -87,7 +89,17 @@ const PPage = () => {
                 className={classes.Action}
                 style={{height: height}}>
                <div  style={{width:window.innerWidth - (window.innerWidth* 0.5), height: height,}}>
-               <First numA ={2} num = {3} click = {() => goto(slides[3])} style ={{marginTop:"-50vh", transform: `translate(0px , ${traY}px)`}} ><h1>three</h1></First>
+               <First numA ={2} num = {3} click = {() => goto(slides[3])} style ={{marginTop:"-50vh", transform: `translate(0px , ${traY}px)`}} >
+               <div className = {classes.BoxImg}>
+                <img alt="" src = {AsstThree}/>
+                 </div>
+                 <div className = {classes.BoxTxt}>
+                     <h1>Aeraki Hotels</h1>
+                     <p> this is goint to be text and I created this for a text and creating this will take some time</p>
+                 </div> 
+                   
+                   
+                   </First>
                </div>
             </FullpageSection>
             
@@ -95,14 +107,15 @@ const PPage = () => {
                 className={classes.Action}
                 style={{height: height}}>
                <div  style={{width:window.innerWidth - (window.innerWidth* 0.5), height: height,}}>
-               <First numA ={3} num = {4} click = {() => goto(slides[4])} style ={{marginTop:"-100vh", transform: `translate(0px , ${traY }px)`}} ><h1>four</h1></First>
-               </div>
-            </FullpageSection>
-            <FullpageSection
-                className={classes.Action}
-                style={{height: height}}>
-               <div  style={{width:window.innerWidth - (window.innerWidth* 0.5), height: height,}}>
-               <First numA ={4} num = {5} click = {() => goto(slides[5])} style ={{marginTop:"-151vh", transform: `translate(0px , ${traY }px)`}} ><h1>Five</h1></First>
+               <First numA ={3} num = {4} click = {() => goto(slides[4])} style ={{marginTop:"-100vh", transform: `translate(0px , ${traY }px)`}} >
+               <div className = {classes.BoxTxt}>
+                     <h1>Product Design</h1>
+                     <p> this is goint to be text and I created this for a text and creating this will take some time</p>
+                 </div>  
+                 <div className = {classes.BoxImg}>
+                <img alt="" src = {AsstFour}/>
+                 </div>
+                </First>
                </div>
             </FullpageSection>
 
@@ -110,12 +123,12 @@ const PPage = () => {
                 className={classes.Action}
                 style={{height: height}}>
                <div  style={{width:window.innerWidth - (window.innerWidth* 0.5), height: height,}}>
-               <First numA ={5} num = {6} click = {() => goto(slides[6])} style ={{marginTop:"-201vh", transform: `translate(0px , ${traY }px)`}} >
-                   <h1>Six</h1>
-                   
+               <First numA ={4} num = {5} click = {() => goto(slides[4])} style ={{marginTop:"-151vh", transform: `translate(0px , ${traY }px)`}} >
                    </First>
                </div>
             </FullpageSection>
+
+            
 
             
             

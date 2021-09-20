@@ -38,14 +38,14 @@ overflow: hidden;
 }
 .Box h1{
     overflow:hidden;
-    font-size:20px;
+    font-size:3vh;
     font-family:montserrat;
     color:red;
     
 }
 
 .Box p {
-    font-size:10px;
+    font-size:15px;
 }
 
 .Shapewrap{

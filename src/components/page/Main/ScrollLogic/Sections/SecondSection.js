@@ -53,7 +53,7 @@ return(
         <Right>
             <div className ={classes.Box}  > 
             <h1>
-            <Text2  Y={"20px"} number = {1} text = 'What'/>
+            <Text2  Y={"3vh"} number = {1} text = 'What'/>
             </h1>
             <motion.p
                            initial= "init"

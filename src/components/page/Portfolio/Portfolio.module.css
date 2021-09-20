@@ -240,12 +240,79 @@ object-fit:cover;
 
 }
 
-.DropBox{
+.DropBox1{
     position:absolute;
     top:0px;
     left:0px;
     width:40vw;
     height:56vh;
-    background-color:grey;
-    opacity:0
+    background-color:rgb(114, 114, 114);
+    opacity:0;
+    cursor:pointer;
+}
+
+.DropBox1 h1{
+    position:relative;
+    top:40vh;
+    font-family: montserrat;
+    font-weight: 300;
+    color:white;
+
+}
+.DropBox2{
+    position:absolute;
+    top:0px;
+    left:40vw;
+    height:56vh;
+    width:30vw;
+    background-color:rgb(114, 114, 114);
+    opacity:0;
+    cursor:pointer;
+}
+
+.DropBox2 h1{
+    position:relative;
+    top:40vh;
+    font-family: montserrat;
+    font-weight: 300;
+    color:white;
+
+}
+.DropBox3{
+    position:absolute;
+    top:0px;
+    left:70vw;
+    height:56vh;
+    width:15vw;
+    background-color:rgb(114, 114, 114);
+    opacity:0;
+    cursor:pointer;
+}
+
+.DropBox3 h1{
+    position:relative;
+    top:40vh;
+    font-family: montserrat;
+    font-weight: 300;
+    color:white;
+
+}
+.DropBox4{
+    position:absolute;
+    top:56vh;
+    left:0vw;
+    height:34vh;
+    width:40vw;
+    background-color:rgb(114, 114, 114);
+    opacity:0;
+    cursor:pointer;
+}
+
+.DropBox4 h1{
+    position:relative;
+    top:20vh;
+    font-family: montserrat;
+    font-weight: 300;
+    color:white;
+
 }

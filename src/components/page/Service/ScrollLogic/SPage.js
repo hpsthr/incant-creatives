@@ -105,15 +105,18 @@ useEffect ( () => {
         <FullpageNavigation
         name = {name}
         traY ="0px"
+        
         spanStyle={{
             fontSize:"13px",
         }}
         itemStyle={
         {width:"20px", 
         height:"20px", 
+        
         borderRadius:"50%",}
         }
         style={{
+            top :"21vh",
         opacity:!number < 1 || showB ? 1 : 0.5,
         transform:valueShow || contact ?  "translate(200px, 3px)": "translate(-30px , 3px)",
 

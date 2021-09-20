@@ -71,7 +71,7 @@ const WorkTogether = props => {
         <ContainerInline>
           
             <Left leftstyle ={{width:"40vw"}} >
-              <div style = {{position:"relative",top:"25vh", left:"9vw"}} className = {classes.Box}>
+              <div style = {{position:"relative",top:"1vh", left:"1vw"}} className = {classes.Box}>
             <h1  style = {{fontSize:"60px", textAlign:"start",marginBottom:10}}>
             <Text2 Y= {60} del = {0.2}  dur = {0.3} number={iNum} text = "Let's"/> &nbsp;
             <Text2 Y= {60} del = {0.2}  dur = {0.3} number={iNum} text = "Work"/> 

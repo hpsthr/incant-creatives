@@ -27,7 +27,7 @@ const CardT = ({num}) => {
       list={items}
       renderItem={CardItem}
       width={150}
-      boxWidth={400}
+      boxWidth={500}
       opacity={0.9}
       scale={0.9}
       disableNext={false}

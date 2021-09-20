@@ -35,11 +35,11 @@ const WhatWe = props => {
 
             <Left >
             <div className ={classes.Box} style = {{margin:"8vh 8vw", textAlign: "left"}} > 
-            <h1 style ={window.innerWidth > 762 ? {fontSize: "30px"}: null}>
+            <h1 style ={window.innerWidth > 762 ? {fontSize: "3vh"}: null}>
             
-            <Text2 Y= {30} number={2} text = "What"/> &nbsp;
-            <Text2 Y= {30} number={2} text = "We"/> &nbsp;
-            <Text2 Y= {30} number={2} text = "Offer?"/>
+            <Text2 Y= {"3vh"} number={2} text = "We"/> &nbsp;
+            <Text2 Y= {"3vh"} number={2} text = "What"/> &nbsp;
+            <Text2 Y= {"3vh"} number={2} text = "Offer?"/>
             </h1>
             <div className = {classes.ImageBox}>
         <div onClick = {() => history.push('/service#branding')}><img alt="1" src={Ione}/><span></span><h2>Branding</h2></div>

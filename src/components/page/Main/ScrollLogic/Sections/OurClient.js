@@ -19,9 +19,9 @@ const OurClient = props => {
         <ContainerInline>
             <Left>
             <div className ={classes.Box} style = {{margin:"10vh 14vw", textAlign: "left"}} > 
-            <h1 style = {{fontSize:"30px"}}>
-            <Text2 Y= {28} del = {0.2}  dur = {0.3} number={iNum} text = "Our "/> &nbsp;
-            <Text2 Y= {28} del = {0.2}  dur = {0.3} number={iNum} text = "Client"/> &nbsp;
+            <h1 style = {{fontSize:"3vh"}}>
+            <Text2 Y= {"3vh"} del = {0.2}  dur = {0.3} number={iNum} text = "Our "/> &nbsp;
+            <Text2 Y= {"3vh"} del = {0.2}  dur = {0.3} number={iNum} text = "Client"/> &nbsp;
             
             </h1>
             </div>
