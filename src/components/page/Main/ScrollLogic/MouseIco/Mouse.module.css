@@ -3,9 +3,10 @@
     display: block;
     /* flex-direction: row; */
     position: absolute;
-    top: 21%;
-    left: 50%;
+    top: 88vh;
+    left: 49%;
     transition:0.3s ease-in-out;
+    z-index: 199;
     
     
     
